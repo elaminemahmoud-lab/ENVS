@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sahra — Trouvez votre voyage en Algérie</title>
+    <meta
+      name="description"
+      content="Explorez des voyages en Algérie selon votre budget, vos envies et votre groupe."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a class="brand" href="#">sahra<span>.</span> </a>
+        <nav>
+          <a href="#voyages">Voyages</a>
+          <a href="#strategie">Veille stratégique</a>
+          <a href="#agences-locales">Agences</a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div>
+            <div class="eyebrow">L'Algérie à votre rythme</div>
+            <h1>Votre prochain voyage commence ici.</h1>
+            <p>
+              Des villes historiques aux oasis du Sahara, trouvez un séjour qui
+              correspond à vos envies, votre budget et votre groupe.
+            </p>
+            <a class="cta" href="#recherche">Commencer la recherche →</a>
+          </div>
+        </section>
+        <section class="search" id="recherche">
+          <h2>Quel voyage vous ressemble ?</h2>
+          <form id="form" class="fields">
+            <div class="field">
+              <label for="place">Destination</label>
+              <select id="place">
+                <option value="">Toute l'Algérie</option>
+                <option>Djanet</option>
+                <option>El Menia</option>
+                <option>Constantine</option>
+                <option>Oran</option>
+                <option>Timimoun</option>
+                <option>Ghardaïa</option>
+                <option>Alger</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="type">Type de voyage</label>
+              <select id="type">
+                <option value="">Toutes les envies</option>
+                <option value="Sahara">Sahara</option>
+                <option value="Culture">Culture</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="budget">Budget max. / personne (DZD)</label>
+              <input
+                id="budget"
+                type="number"
+                min="1"
+                placeholder="Ex. 80000"
+              />
+            </div>
+            <div class="field">
+              <label for="people">Voyageurs</label>
+              <input id="people" type="number" min="1" value="2" />
+            </div>
+            <div class="field">
+              <label for="days">Durée maximale</label>
+              <select id="days">
+                <option value="">Flexible</option>
+                <option value="3">3 jours</option>
+                <option value="5">5 jours</option>
+                <option value="7">7 jours</option>
+                <option value="10">10 jours</option>
+              </select>
+            </div>
+            <button class="go" type="submit">Rechercher →</button>
+          </form>
+        </section>
+        <section class="section strategy" id="strategie">
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">Observer · comprendre · partager</div>
+              <h2>La veille stratégique de Sahra</h2>
+              <p>Quatre angles de surveillance pour préparer des voyages en Algérie et prendre des décisions avec des sources vérifiables.</p>
+            </div>
+            <a class="detail strategy-link" href="#veille">Voir les sources suivies ↓</a>
+          </div>
+          <div id="strategieStats" class="strategy-stats" aria-live="polite"></div>
+          <div id="strategieReview" class="strategy-review" aria-live="polite"></div>
+          <div id="strategieGrid" class="strategy-grid"></div>
+          <div class="method-panel">
+            <div>
+              <div class="eyebrow">Méthode du devoir</div>
+              <h3>De la collecte à la diffusion</h3>
+              <p>Cette matrice décrit uniquement les outils actifs dans Sahra et la façon dont leurs résultats sont présentés.</p>
+            </div>
+            <div class="method-table-wrap">
+              <table class="method-table">
+                <thead><tr><th scope="col">Veille</th><th scope="col">Collecte</th><th scope="col">Analyse</th><th scope="col">Diffusion</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Technologique</th><td>Page APS · RSS Google Actualités ciblé</td><td>État de la page, articles datés et points à examiner</td><td>Tableau Sahra · export CSV</td></tr>
+                  <tr><th scope="row">Concurrentielle</th><td>Pages TourRadar, Nomade Aventure et Terres d’Aventure</td><td>Comparaison SHA-256 du texte des pages</td><td>Tableau Sahra · export CSV</td></tr>
+                  <tr><th scope="row">Commerciale</th><td>Pages d’agences · RSS Google Actualités · Mastodon public</td><td>Changements, articles datés et sources indisponibles</td><td>Tableau Sahra · export CSV</td></tr>
+                  <tr><th scope="row">Sociétale</th><td>Pages France Diplomatie · RSS Google Actualités ciblé</td><td>État des pages, articles datés et points à examiner</td><td>Tableau Sahra · export CSV</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <button id="exportVeilleCsv" class="detail" type="button">Exporter les observations (.csv)</button>
+            <p class="note">Outils actifs : moniteurs Node.js, flux RSS Google Actualités, API publique Mastodon et tableau de bord Sahra. GitHub Actions pourra lancer le contrôle quotidien après publication du dépôt.</p>
+            <p class="note">Les articles et changements sont des signaux à vérifier. Sahra ne modifie pas automatiquement les prix, formalités ou conseils aux voyageurs.</p>
+          </div>
+        </section>
+        <section class="section" id="voyages">
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">Sélection d'itinéraires</div>
+              <h2>Voyages à découvrir</h2>
+              <p>Comparez les séjours et découvrez les agences associées.</p>
+            </div>
+            <div class="count" id="count"></div>
+          </div>
+          <div class="cards" id="cards"></div>
+          <p class="note">
+            Offres publiées par Ziguade Travel, Algérie Tours et Evaneos,
+            consultées le 14 novembre 2026. Conversion indicative : 1 € =
+            151,688 DZD, taux officiel de la Banque d’Algérie du 12 novembre
+            2026. Prix, dates et places à confirmer auprès de l’agence.
+            <a
+              href="https://www.bank-of-algeria.dz/stoodroa/2026/11/clean_cotation-1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source du taux ↗</a
+            >
+          </p>
+        </section>
+        <section class="section" id="agences-locales">
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">Agences algériennes</div>
+              <h2>Parlez à une agence locale</h2>
+              <p>
+                Coordonnées et réseaux sociaux indiqués par les agences sur
+                leurs sites officiels.
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="body">
+                <div class="loc">Djanet · Zelouaze BP 221</div>
+                <h3>Essendilène Voyages</h3>
+                <p class="desc">
+                  Circuits de trek, méharée et 4×4 dans le Sahara. Consultez
+                  leurs programmes et contactez directement l’agence.
+                </p>
+                <div>
+                  <a
+                    class="badge"
+                    href="https://fr-fr.facebook.com/EssendileneVoyages/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Facebook ↗</a
+                  >
+                  <a
+                    class="badge"
+                    href="https://instagram.com/essendilene_voyagesdjanet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram ↗</a
+                  >
+                </div>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://essendilene-voyages.com/Essendilene/accueilfr.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Voyages et contact ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Alger · Hydra, Saïd Hamdine</div>
+                <h3>Fellaoucen Tour</h3>
+                <p class="desc">
+                  Voyages organisés et séjours sur mesure. Téléphone : 0561 70
+                  09 88.
+                </p>
+                <div>
+                  <a
+                    class="badge"
+                    href="https://www.facebook.com/Fellaoucen.tourism/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Facebook ↗</a
+                  >
+                  <a
+                    class="badge"
+                    href="https://www.instagram.com/fellaoucentour/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram ↗</a
+                  >
+                </div>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://fellaoucentour.dz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Site et devis ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Béjaïa · Sidi Ali Bahar</div>
+                <h3>Kabylie Voyage</h3>
+                <p class="desc">
+                  Voyages nationaux et séjours sur mesure. Téléphone et WhatsApp
+                  : +213 560 12 44 33.
+                </p>
+                <div>
+                  <a
+                    class="badge"
+                    href="https://www.instagram.com/kabylie_voyages/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram ↗</a
+                  >
+                  <a
+                    class="badge"
+                    href="https://www.facebook.com/profile.php?id=61573292310313"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Facebook ↗</a
+                  >
+                </div>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://kabylie-voyage.com/contact/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Contact ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Alger · Chéraga, centre El Qods</div>
+                <h3>Pegamel Travel</h3>
+                <p class="desc">
+                  Circuits en Algérie et excursions culturelles, de la Casbah
+                  d’Alger à Bousaâda. WhatsApp : +213 659 81 78 19.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://www.pegameltravel.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Voir les circuits ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="note">
+            Les circuits, prix et disponibilités sont à confirmer directement
+            auprès de chaque agence. Une présence sur les réseaux sociaux ne
+            prouve pas qu’une agence organise les voyages affichés plus haut.
+          </p>
+        </section>
+        <section class="section" id="idees">
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">À construire avec une agence</div>
+              <h2>Idées de voyage à personnaliser</h2>
+              <p>
+                Choisissez un parcours puis demandez un devis à une agence
+                locale. Ce ne sont pas des offres publiées ni des prix
+                confirmés.
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <div class="body">
+                <div class="loc">Culture · 5 jours</div>
+                <h3>Alger, Tipaza et Cherchell</h3>
+                <p class="desc">
+                  Casbah, musées, côte et sites antiques. Une idée de circuit à
+                  adapter à vos dates et à votre groupe.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://fellaoucentour.dz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demander si réalisable ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Nature · 4 jours</div>
+                <h3>Béjaïa et la Kabylie</h3>
+                <p class="desc">
+                  Littoral, villages et promenades en montagne, selon la saison
+                  et les possibilités de l’agence.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://kabylie-voyage.com/contact/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demander si réalisable ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Patrimoine · 6 jours</div>
+                <h3>Oran, Tlemcen et Alger</h3>
+                <p class="desc">
+                  Architecture, histoire et culture urbaine pour un voyage à
+                  organiser sur mesure.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://www.pegameltravel.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demander si réalisable ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Côte · 4 jours</div>
+                <h3>Béjaïa et ses environs</h3>
+                <p class="desc">
+                  Vieille ville, cap Carbon, Gouraya et littoral. Parcours à
+                  adapter avec une agence de la région.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://kabylie-voyage.com/contact/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demander un devis ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Nature · 3 jours</div>
+                <h3>Tikjda et le Djurdjura</h3>
+                <p class="desc">
+                  Randonnées et paysages de montagne selon la saison, la météo
+                  et les possibilités de transport.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://fellaoucentour.dz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demander un devis ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Patrimoine · 4 jours</div>
+                <h3>Sétif et Djémila</h3>
+                <p class="desc">
+                  Une découverte de la ville et du site archéologique de
+                  Djémila, à organiser avec une agence.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://www.pegameltravel.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demander un devis ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="body">
+                <div class="loc">Littoral · 4 jours</div>
+                <h3>Skikda et la côte</h3>
+                <p class="desc">
+                  Séjour autour de la ville, de ses plages et de ses paysages
+                  côtiers, à concevoir sur mesure.
+                </p>
+                <div class="bottom">
+                  <a
+                    class="detail"
+                    href="https://fellaoucentour.dz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demander un devis ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section" id="veille">
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">Suivi des sources officielles</div>
+              <h2>Veille des agences et circuits</h2>
+              <p>
+                L’outil compare les pages des agences et des circuits suivis.
+                Ouvrez la source pour vérifier les prix, dates et disponibilités.
+              </p>
+            </div>
+          </div>
+          <p id="veilleStatus" class="note" role="status"></p>
+          <button id="veilleRefresh" class="detail" type="button" hidden>Contrôler maintenant</button>
+          <div class="cards" id="veilleResults"></div>
+          <div id="veilleChanges"></div>
+          <p class="note">
+            Un changement signale une modification de page, pas nécessairement
+            une nouvelle offre. Les contrôles automatiques nécessitent la
+            publication du projet avec le workflow de veille activé.
+          </p>
+        </section>
+        <section class="section" id="concurrence">
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">Veille concurrentielle</div>
+              <h2>Voyages en Algérie chez les concurrents</h2>
+              <p>Suivi des pages Algérie de TourRadar, Nomade Aventure et Terres d’Aventure.</p>
+            </div>
+          </div>
+          <div class="cards" id="concurrenceResults"></div>
+          <p class="note">Les changements de ces pages servent à repérer de nouvelles offres ou évolutions tarifaires. Consultez chaque site pour confirmer les détails.</p>
+        </section>
+        <section class="section" id="references">
+          <div class="sectionhead"><div>
+            <div class="eyebrow">Sources institutionnelles</div>
+            <h2>Innovation et informations de voyage</h2>
+            <p>Pages publiques suivies pour les innovations touristiques, les formalités d’entrée et la sécurité. Consultez toujours la version officielle avant une décision.</p>
+          </div></div>
+          <div class="cards" id="referenceResults"></div>
+        </section>
+        <section class="section" id="medias">
+          <div class="sectionhead"><div>
+            <div class="eyebrow">Veille médias</div>
+            <h2>Tourisme algérien dans l’actualité</h2>
+            <p>Articles publics trouvés dans Google Actualités pour « tourisme Algérie ».</p>
+          </div></div>
+          <p id="mediaStatus" class="note" role="status"></p>
+          <div class="cards" id="mediaResults"></div>
+          <p class="note">Les résultats proviennent d’un moteur d’actualités. Leur présence ne garantit pas l’exactitude des articles ; vérifiez la publication d’origine.</p>
+        </section>
+        <section class="section" id="reseaux">
+          <div class="sectionhead"><div>
+            <div class="eyebrow">Veille réseaux sociaux</div>
+            <h2>Conversations publiques</h2>
+            <p>Publications Mastodon récentes associées aux mots-dièses Algérie et Djanet, liées au voyage.</p>
+          </div></div>
+          <p id="socialStatus" class="note" role="status"></p>
+          <div class="cards" id="socialResults"></div>
+          <p class="note">Ces publications reflètent leurs auteurs. Elles ne sont ni des offres vérifiées ni un échantillon représentatif des réseaux sociaux.</p>
+        </section>
+      </main>
+    </div>
+    <section class="how" id="comment">
+      <div class="wrap">
+        <div class="eyebrow">Simple et personnalisé</div>
+        <h2
+          style="
+            font:
+              600 38px &quot;Playfair Display&quot;,
+              serif;
+          "
+        >
+          Trois étapes pour partir
+        </h2>
+        <div class="steps">
+          <div class="step">
+            <b>1</b>
+            <h3>Décrivez vos envies</h3>
+            <p>
+              Choisissez un lieu, un style de voyage, votre budget et la taille
+              du groupe.
+            </p>
+          </div>
+          <div class="step">
+            <b>2</b>
+            <h3>Comparez les séjours</h3>
+            <p>
+              Les offres correspondant à vos critères remontent en premier, avec
+              leur prix et leur programme.
+            </p>
+          </div>
+          <div class="step">
+            <b>3</b>
+            <h3>Découvrez l’agence</h3>
+            <p>
+              Consultez les détails de l’agence et les prestations incluses
+              avant de la contacter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wrap">
+      <footer>
+        <div>
+          <span class="brand">sahra<span>.</span> </span>
+          <p>Un projet de découverte touristique en Algérie.</p>
+        </div>
+        <p>Offres réelles · Vérifiez les disponibilités</p>
+      </footer>
+    </div>
+    <dialog id="dialog">
+      <div class="modal" id="modal"></div>
+    </dialog>
+    <script src="app.js" defer></script>
+    <script src="veille-data.js" defer></script>
+    <script src="veille.js" defer></script>
+    <script src="flux-data.js" defer></script>
+    <script src="flux.js" defer></script>
+    <script src="strategie.js" defer></script>
+  </body>
+</html>
