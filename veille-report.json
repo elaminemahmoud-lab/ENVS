@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T18:15:48.524Z",
+  "checkedAt": "2026-11-21T18:39:21.793Z",
   "sources": [
     {
       "name": "Ziguade Travel",
@@ -101,6 +101,11 @@
     }
   ],
   "changes": [
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-21T18:39:21.793Z"
+    },
     {
       "name": "TourRadar · Algérie",
       "url": "https://www.tourradar.com/d/algeria",
