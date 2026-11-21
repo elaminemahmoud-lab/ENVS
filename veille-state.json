@@ -2,50 +2,55 @@
   "pages": {
     "https://ziguadetravel.com/": {
       "hash": "4f76c285cd7bebfb6b2e7b1356d58471c2ff91d7ba2bafa39ef5f46f9ea603e7",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://www.algerie-tours.com/nos-circuits/": {
       "hash": "05094d14cf2d5990dbd522d353386f41b66eed5e43dd6c7a4e2d912a4f6d2b23",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://essendilene-voyages.com/Essendilene/accueilfr.html": {
       "hash": "c823cd2f517b54be54a7681351377633a5f302adcfb42d36af970b479b9c335a",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://fellaoucentour.dz/": {
       "hash": "f73699883836b870536f3c7a7adc44cfbc687950dfa50d9a17cb4fd59f7f413a",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://kabylie-voyage.com/contact/": {
       "hash": "14c4232453c68f91a2967896786cf0bf7604c4cb46d451beb2193581c3544ed8",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://www.tourradar.com/d/algeria": {
-      "hash": "1ed3cd99d190ad20d17c9bca77908906cc9263dc70ad1896979297447636c64d",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "hash": "1d10b3547108482c531d84fd0b7b41b2752d0d2adc422929b300c2c27b503f84",
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://www.nomade-aventure.com/voyage-algerie": {
       "hash": "7634f1624d85c1de84dcd69d8e98d7a028fbe15419dd0a4ad7e9188d2923c8b4",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://www.terdav.com/ps-algerie/tp-circuit-accompagne": {
       "hash": "c15a4e5351fbbef6c452a504476689c12b79a024da5676abb2d97d115b1d2091",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes": {
       "hash": "a6f8e8a4c86626c31bee77a9c16b167c534dc48a43494294d64843dbe271767f",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-entree-sejour": {
       "hash": "023a114ec54d4e3d8f727469b35feed6197dfa192d40349c709b57fa66079cdc",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     },
     "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-securite": {
       "hash": "d5986c216ff0c04f1b714812a734f5cf4dce5e1aef078b376e28b99f1206587d",
-      "checkedAt": "2026-11-21T18:07:14.657Z"
+      "checkedAt": "2026-11-21T18:15:48.524Z"
     }
   },
   "changes": [
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-21T18:15:48.524Z"
+    },
     {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",

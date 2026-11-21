@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T18:07:35.237Z",
+  "checkedAt": "2026-11-21T18:15:57.784Z",
   "media": {
     "status": "ok",
     "items": [
@@ -8,20 +8,27 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd3JCR1ktOC14cXdNdlQwTTNNejBGNFU3RkdDTmlGOHpLZTV5aUhoNWRSVi1ZMTVkaHVVSG5HRjZwUmh6djFCWUxaS1FwZUNTSVpRenZNNDExYkxja2VabGlQai1RcHpCRk9WaGxjWG1UOUY5RUN2TVV5Umh3MzJQYVd4MU1LdWJlYll1QXFGTENWUW1SZ3lraVJQN2hQWmFPTW9nOUlJdlRhMGxvenQ3SjBB?oc=5",
         "source": "Diasporas",
         "date": "2026-11-21T10:48:47.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Développement touristique : La diaspora pour accélérer la croissance - El Watan",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxON3E3REN0blVwXzgtbDJWNnBydGRBR0VPTVMwRDI3ZHJXSnlsWGJNQTd2aG5XeDR6M042aWJMdVp0b3NtTlZoMThTdTVWM0daaERCZ05qd2pUR0RHdHBuSjBreFcwLUVMSW0wMGpjVENRczBkZ1FFUWViLXRheE1qSWRGaUFiTVFZTm9ESm5wUQ?oc=5",
         "source": "El Watan",
         "date": "2026-11-21T09:03:07.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Tunisie : les critiques se multiplient à l’égard des touristes algériens - TSA - Tout Sur l'Algérie",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQck9BZVcyT2NFV0ZVTk9FNDg3ZWZqa0NkTUJ5bVlwWU96U2g3R3RRODNaa2tjSjJjY3hZTHExY1ZmYlFPWXBzbG1nbTBMUUhvampOS1BMRHhLdlZXcDJtVncxT2xkODI5LUpHeGRySE9qY3ZiVVNCcXhNSVNCRGNkcnVLM3JJMzFNWnFVai1KUVlLN3I5OHBsOE9tWjBwN0k?oc=5",
         "source": "TSA - Tout Sur l'Algérie",
         "date": "2026-11-18T07:40:38.000Z",
+        "isNew": false
+      },
+      {
+        "title": "Intégration de 20 nouveaux services dédiés au secteur du tourisme - وكالة الأنباء الجزائرية",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMTFVNnk1bWtKU3FXMWtUcTlndl82OWZIcFdtWWtuR2hzeHhYa2p2Yy1zUjJCSmJMRlNZdnhTT1lVbktPTDJXS0p1UTB3NENyak5GNDlrdkxiMWJhRXVVSTJLdFlFWGVYbnItR2ZQQ01vX1NXTk90eVNDR3RhdERGTkV3aTcxemtlVE9SbmNwOTlrNkZYNkR0bU1lcHBtRjBmcVBmSjg4bzc4c2VoSExfYTVQaGFOS2F0M0hMb3ljZjBraC1JWS14Wg?oc=5",
+        "source": "وكالة الأنباء الجزائرية",
+        "date": "2026-11-16T11:05:00.000Z",
         "isNew": true
       },
       {
@@ -50,14 +57,7 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcDg5MkVzcU16bllMWEhvcEZ4bk5WaVR2UElnRjJTWWRmekNnc2pnaGl0R0sxTkF5RHRCNUE2Y1ZuX0g5UkJhWXo3UndMUVYzRXQ0azZnRXgzRjhxamNhOEpKaDBvMHZQdmp3WEs3eS13YU5QOXhIRFlsQmhfdlVjTEVvM0YzME5QcDlHdGxIMmYzRFltUkwxZW1JdVN2N2V4eXEzUjhsWVI0X0RHN3c?oc=5",
         "source": "webdo",
         "date": "2026-07-23T07:00:00.000Z",
-        "isNew": true
-      },
-      {
-        "title": "Mme Meddahi préside une réunion de coordination consacrée à l'évaluation du dispositif de délivrance du visa à l'arrivée | Algérie Presse Service - وكالة الأنباء الجزائرية",
-        "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNXzRPT0xxTGZ0SEVtT2lUWG5BX3Fxd09rWm9oMXQwcTVWaV9RRWRJcTFGVUszbEJ6cTlnWUtNa3QybWQwQUhVU0l5a0xhRzJ1VDlUc1I1R3Z6MDhsTGxhRWtyN2w5MGJMeWFUd0pQLWphcUNTOERZckpPUzdmTElFNm9qcVJsLW5feDc4UHVoNzBYOTl5ZXV4dFlHaWM2Wno3b1I4eU5CSmxqeDJXQ3AxNVZKYU5SOHF0OEREeUpnV2R0RWkzQnlUN0lIcWt6eno4YkNIOWl6VkFYWmF4NWlmemJvMVZISHh1c2lJTVNJcFZPMzFMaUl5WWV5YUZJQ1dOeGhPT0gzOXhLNGw5?oc=5",
-        "source": "وكالة الأنباء الجزائرية",
-        "date": "2026-07-20T07:00:00.000Z",
-        "isNew": true
+        "isNew": false
       }
     ]
   },
@@ -100,7 +100,7 @@
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UcEQ5bGpEZWotYnJFSlB6dWJuNjdYRlpxZDd1cnRycTR0alB6MVRDUWhadGN5dWNmRUlGOUhqWks2MWxOaTdwbkVfZlQ5NWRaYVFxOC1LOGI4cFdGR3lWX2R5VDBjT2tWVE5WZWpNQ1c?oc=5",
           "source": "https://horticulture-abadie-pyrenees.com/",
           "date": "2026-11-20T17:49:48.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Air Algérie propose des tarifs réduits sur des vols internationaux - horticulture-abadie-pyrenees.com",
@@ -114,21 +114,21 @@
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQUdjcjBmVzUzRFo3V0R6cGZGc3NWT3lLQUdVcWVGNGFxVUZtaW5yT2kxX0RPLXJTRmVfODE0R283TWhkYzM4MlVUT0RvUWRXLWNaSTVzMUtZWlJsWWI5Szd6NnVRUWJyX1V4OXVpejFLaXhUXzdRYTFhbkNheFBrS1g0M2VvcmRicUU5cGg4TzhVdWpTUUpNcWlnYjgzRDNCRmc?oc=5",
           "source": "Visas & Voyages Algérie",
           "date": "2026-11-17T10:50:46.000Z",
-          "isNew": true
-        },
-        {
-          "title": "Billets Air Algérie été 2027 : les prix depuis quatre villes de France - Voyage France Algerie",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81U3NsR0lvOFFjaVFZeEpZSTZvNHBhWk1nVFFSXzV3MFIzT1NWQ3lFUUhPNTJWLTJPaFRrTTViT2gyR2pSU2lVOEpfLVlST0UxM3ExZjBwY2xCVC1BWnNHS0stZ3p4aXp1ZXBkMHcxemt0RFl2Rmk1N3lmd1FqQQ?oc=5",
-          "source": "Voyage France Algerie",
-          "date": "2026-11-14T10:59:42.000Z",
-          "isNew": true
-        },
-        {
-          "title": "Air Algérie lance une nouvelle promotion : Istanbul, Marseille, Genève… 11 destinations à prix réduits - Algerie360",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPc05MczA0RmxnMDBsWGhBSEZwUUVrY1JxU1dhdUhRYmhsazkxcEhaeTc1Z3lCalJwb28tWVNOTFFISlM2dnVWdGcxc2RYb2NEWUlHbU1qRVVDWHdacFNuNlJjTFMwbUtyVS1ORTBNODhPSDdFdWFmWW04V0RkNGZlaUM3WHc?oc=5",
-          "source": "Algerie360",
-          "date": "2026-11-09T08:00:00.000Z",
           "isNew": false
+        },
+        {
+          "title": "Air Algérie : la « Super Promo » fait baisser les prix des billets vers l’Algérie - Voyagerdz",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWnVjVUhsdUlHZkViZWZEanhWQnAxcmk1QklQdXI2T2s2U0F0SjdKZWZ2M3RVajBPZGZxNHJUQWdxdEVjTGd5WUExMHgyVklXUTkyQ1M2a0dONWxkdVF1TzViY0VLRUI1blI4STRacUlsNlBRc2RjUWtoTngzWjg2ZHRiR0RWOHNvS1NhQThfM2cwWm5zSEdDM2hyTFhfUQ?oc=5",
+          "source": "Voyagerdz",
+          "date": "2026-10-19T07:00:00.000Z",
+          "isNew": true
+        },
+        {
+          "title": "Billets France - Algérie : une agente de voyage explique quand réserver pour éviter les prix élevés - Visas & Voyages Algérie",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSmg0MFVvYWQ0eEtzaVhlZlVnZHhMSEY1LTJnRWtUSmFwMjJIRVpWV2hJOWs4M3dEeURQeXZUR184Z0ZvNWRab1Jvczl5Q3drOExUMVlpOFBOc1JqWVFGZEJZdEkyM1dnb0xGMDVjQTNCT0ZOcEtlQm9kdVhUbXRnbE05OGZUeWFkRFJxSXc1b2ozaGJza0JZblVZMmlLQ0JMVUVnZW04NFZLLWthZmZHWHU1a3JvdFlyS3ZwUkpscU5KbFU?oc=5",
+          "source": "Visas & Voyages Algérie",
+          "date": "2026-10-01T07:00:00.000Z",
+          "isNew": true
         }
       ]
     },
@@ -154,7 +154,7 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ3dTbzR3YjRXSF96RC1XaUpBb0dGeEhWWGhFR3BaY1BxZTA0RTYzVG5IUUJMRDJXcUdIcFczLS1xY0kzZTc0ZXF5WUpQWEl3cklZcWFrMkdjNHR4dVo3TWRjZGJmQVdjN2lQcFBVYkFzOEYtV0xmMktTVHpMUmRxYW11OHhuQXZQOEpvczFkU2ZKeE5kNUZFRFhFVFFMSTl5NHM0Vkk5cm9jU2I3Mnc?oc=5",
           "source": "Voyagerdz",
           "date": "2026-10-24T07:00:00.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Titre de séjour en France : 7 documents à réunir pour une régularisation, selon une avocate - Visas & Voyages Algérie",
@@ -168,7 +168,7 @@
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONl9BMEJjdHFBVlZMbUgzaFF6dnZ6OEZsTzhBckwyVFR4bkdDdjJOMHFWeG9sQ0JvWFlfM0tqWHJSTmgxTXpVNnFUNk9GMDV2ZDZkejJTQUU1UHhOemd6UWY3NG45cnB0N0RHUXh0Vy1LelYtTHIxTzk3QkNLWDlOZnVWWEFQOEdMWXlZMTFldTNEUUR2V2RlZWtOVF9pNHNtNjlpQVZ3WFk5WmZHWkI4SlI0Ql9QUQ?oc=5",
           "source": "Visas & Voyages Algérie",
           "date": "2026-09-21T07:00:00.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Aéroport d’Alger : il voyageait avec un passeport diplomatique volé et un faux visa - Visas & Voyages Algérie",
