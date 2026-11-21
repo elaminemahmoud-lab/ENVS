@@ -39,6 +39,7 @@ test("premier relevé, changement et échec conservent la référence", async ()
     const before = JSON.parse(await readFile(state, "utf8")).pages["https://example.com/"].hash;
     await writeFile(fixture, "FAIL");
     await assert.rejects(check);
+    assert.equal(JSON.parse(await readFile(report, "utf8")).sources[0].error, "HTTP 503");
     const after = JSON.parse(await readFile(state, "utf8")).pages["https://example.com/"].hash;
     assert.equal(after, before);
   } finally {

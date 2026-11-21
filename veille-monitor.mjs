@@ -30,6 +30,7 @@ const results = [];
 for (const source of sources) {
   if (!/^https:\/\//.test(source.url)) throw new Error(`URL HTTPS requise : ${source.name}`);
   let status = "error";
+  let failure;
   try {
     const response = await fetch(source.url, {
       headers: { "User-Agent": "SahraVeille/1.0 (+site de découverte touristique)", Accept: "text/html" },
@@ -44,9 +45,12 @@ for (const source of sources) {
     pages[source.url] = { hash, checkedAt };
     if (status === "changed") changes.unshift({ name: source.name, url: source.url, at: checkedAt });
   } catch (error) {
+    failure = /^HTTP \d+$/.test(error.message) ? error.message
+      : error.name === "TimeoutError" ? "Délai de réponse dépassé"
+      : error.message === "Contenu trop court" ? error.message : "Connexion impossible";
     console.warn(`${source.name}: ${error.message}`);
   }
-  results.push({ ...source, status });
+  results.push({ ...source, status, ...(failure ? { error: failure } : {}) });
   console.log(`${source.name}: ${status}`);
 }
 

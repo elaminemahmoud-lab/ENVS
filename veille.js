@@ -24,7 +24,11 @@ function renderVeille(report) {
   const cards = (items) => items.length
     ? items.map((source) => {
         const label = { changed: "Page modifiée", unchanged: "Aucun changement", new: "Premier relevé", error: "Contrôle impossible" }[source.status] || "À vérifier";
-        return `<article class="card"><div class="body"><div class="loc">${escapeHtml(source.kind)}</div><h3>${escapeHtml(source.name)}</h3><p class="desc">${escapeHtml(label)}${source.status === "error" ? " · Réessayez au prochain contrôle." : ""}</p><div class="bottom"><a class="detail" href="${escapeHtml(safeUrl(source.url))}" target="_blank" rel="noopener noreferrer">Voir la source ↗</a></div></div></article>`;
+        const failureLabel = ["HTTP 403", "HTTP 429"].includes(source.error)
+          ? "Le site refuse ou limite les contrôles automatiques. Consultez le lien directement."
+          : source.error ? `${source.error}. Consultez la source ou réessayez au prochain contrôle.`
+          : "Réessayez au prochain contrôle.";
+        return `<article class="card"><div class="body"><div class="loc">${escapeHtml(source.kind)}</div><h3>${escapeHtml(source.name)}</h3><p class="desc">${escapeHtml(label)}${source.status === "error" ? ` · ${escapeHtml(failureLabel)}` : ""}</p><div class="bottom"><a class="detail" href="${escapeHtml(safeUrl(source.url))}" target="_blank" rel="noopener noreferrer">Voir la source ↗</a></div></div></article>`;
       }).join("")
     : '<div class="empty"><h3>Aucun contrôle effectué</h3><p>Les sources apparaîtront ici après la première exécution de l’outil de veille.</p></div>';
   document.querySelector("#veilleResults").innerHTML = cards(sources.filter((source) => source.group === "agences"));

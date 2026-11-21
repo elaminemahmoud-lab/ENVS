@@ -43,7 +43,7 @@ Le workflow utilise le jeton temporaire fourni par GitHub Actions, sans clé API
 ## Vérifications locales
 
 ```powershell
-node --test veille-monitor.test.mjs
+node --test veille-monitor.test.mjs flux-filters.test.mjs
 node publier-static.mjs
 ```
 

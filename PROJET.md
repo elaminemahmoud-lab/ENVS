@@ -74,6 +74,9 @@ Pour ajouter une source, ajouter un objet `name`, `url` (HTTPS) et `kind` dans `
 
 ## Données et limites
 
+- Les articles des rubriques et de la veille médias sont filtrés par `flux-filters.mjs` : éditeur appartenant à une liste explicite de domaines, titre lié au voyage et à l’Algérie, date valide dans les 90 derniers jours, puis dédoublonnage et tri par date. Le domaine de l’éditeur est lu dans le flux RSS, pas déduit de son nom affiché. Cette sélection peut écarter des articles pertinents et ne constitue pas une validation de leur contenu. Une collecte réussie sans article pertinent affiche zéro résultat. En cas d’échec, les anciens articles ne sont conservés que s’ils passent encore les filtres.
+- Les échecs des pages suivies incluent désormais une raison dans le rapport (statut HTTP, délai dépassé, contenu trop court ou connexion impossible). Le site distingue notamment un refus ou une limitation HTTP 403/429. Les liens restent consultables directement ; les sources ne sont pas supprimées pour masquer les erreurs.
+
 - Les circuits affichés dans `app.js` restent une sélection ajoutée manuellement à partir de Ziguade Travel, Algérie Tours et Evaneos. **La veille ne modifie jamais automatiquement les prix ni les disponibilités.** Un changement de page invite à revérifier la source officielle.
 - Certains sites peuvent bloquer les requêtes automatiques ou rendre leurs offres uniquement avec JavaScript. Dans ce cas, le résultat est « Contrôle impossible » ou le changement n'est pas détecté. L'ancien état est conservé en cas d'échec.
 - Au premier contrôle du 15 novembre 2026, Evaneos et Pegamel Travel ont répondu HTTP 403 à l'outil ; leurs pages restent suivies mais le rapport affiche leur échec. Les trois sources concurrentielles suivies sont [TourRadar](https://www.tourradar.com/d/algeria), [Nomade Aventure](https://www.nomade-aventure.com/voyage-algerie) et [Terres d'Aventure](https://www.terdav.com/ps-algerie/tp-circuit-accompagne).
