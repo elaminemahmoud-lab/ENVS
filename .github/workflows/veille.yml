@@ -20,11 +20,13 @@ jobs:
   monitor:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          # Les rapports sont enregistrés sur main : même une relance doit
+          # partir de son état actuel, pas du commit de l'ancien essai.
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
@@ -48,7 +50,10 @@ jobs:
           git add veille-state.json veille-data.js veille-report.json flux-data.js flux-report.json
           if ! git diff --cached --quiet; then
             git commit -m "Mise à jour de la veille Sahra"
-            git push
+            # Intégrer les commits arrivés pendant la collecte, sans forcer
+            # l'envoi ni écraser un changement concurrent.
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
       - name: Préparer uniquement les fichiers publics
         run: node publier-static.mjs
@@ -57,7 +62,22 @@ jobs:
       - name: Préparer la publication
         uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages
           path: dist
+
+  deploy:
+    needs: monitor
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Publier le site actualisé
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages
