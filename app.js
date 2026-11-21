@@ -219,11 +219,12 @@ function render(list) {
     render(trips);
   });
   document
-    .querySelectorAll(".detail")
+    .querySelectorAll("#cards button.detail[data-id]")
     .forEach((b) => b.addEventListener("click", () => openTrip(+b.dataset.id)));
 }
 function openTrip(id) {
   const t = trips.find((x) => x.id === id);
+  if (!t) return;
   document.querySelector("#modal").innerHTML =
     `<button class="close" aria-label="Fermer">×</button><div class="loc">${t.place} · ${t.type}</div><h2>${t.title}</h2><p>${t.summary}</p><p><b>Itinéraire :</b> ${t.route}</p><p><b>Durée :</b> ${t.days} jours &nbsp; <b>À partir de :</b> ${fmt(t.price)} € par personne (≈ ${fmt(dzd(t.price))} DZD)</p><p>${priceConditions(t)}</p><p><b>Estimation pour votre groupe :</b> ${fmt(dzd(t.price) * (+document.querySelector("#people").value || 1))} DZD. Simple multiplication du tarif de référence, hors suppléments ; devis nécessaire selon l’effectif et les dates.</p><p class="meta">Prix et programme consultés le 21 novembre 2026. La veille automatique ne vérifie pas les places disponibles.</p><h3>Prestations et programme annoncés</h3><div>${t.included.map((x) => `<span class="badge">${x}</span>`).join("")}</div><h3>Agence organisatrice</h3><p><b>${t.agency}</b> · Agence réelle · voir la source officielle</p><p class="warn">Prix en DZD estimé au taux officiel du 12 novembre 2026 (1 € = 151,688 DZD). Le tarif de l’agence reste en euros ; confirmez le montant et les places auprès d’elle.</p><a class="contact" href="${t.contact}" target="_blank" rel="noopener noreferrer">Contacter l'agence ↗</a> <a href="${t.source}" target="_blank" rel="noopener noreferrer">Voir la source</a>`;
   document.querySelector("#dialog").showModal();

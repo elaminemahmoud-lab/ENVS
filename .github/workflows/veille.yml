@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: "24"
       - name: Vérifier le moniteur
-        run: node --test veille-monitor.test.mjs flux-filters.test.mjs
+        run: node --test veille-monitor.test.mjs flux-filters.test.mjs site.test.mjs
       - name: Contrôler les sources
         id: pages
         continue-on-error: true
