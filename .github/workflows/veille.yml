@@ -31,7 +31,11 @@ jobs:
         with:
           node-version: "24"
       - name: Vérifier le moniteur
-        run: node --test veille-monitor.test.mjs flux-filters.test.mjs site.test.mjs
+        run: node --test veille-monitor.test.mjs flux-filters.test.mjs site.test.mjs taux-monitor.test.mjs
+      - name: Actualiser le taux EUR/DZD
+        id: taux
+        continue-on-error: true
+        run: node taux-monitor.mjs
       - name: Contrôler les sources
         id: pages
         continue-on-error: true
@@ -41,13 +45,13 @@ jobs:
         continue-on-error: true
         run: node flux-monitor.mjs
       - name: Signaler les échecs de collecte
-        if: steps.pages.outcome == 'failure' || steps.flux.outcome == 'failure'
+        if: steps.pages.outcome == 'failure' || steps.flux.outcome == 'failure' || steps.taux.outcome == 'failure'
         run: echo "::warning::Une collecte a échoué. Consulter les journaux et la date des rapports sur le site."
       - name: Publier le rapport
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add veille-state.json veille-data.js veille-report.json flux-data.js flux-report.json
+          git add veille-state.json veille-data.js veille-report.json flux-data.js flux-report.json taux-report.json taux-data.js
           if ! git diff --cached --quiet; then
             git commit -m "Mise à jour de la veille Sahra"
             # Intégrer les commits arrivés pendant la collecte, sans forcer

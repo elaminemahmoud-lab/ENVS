@@ -15,16 +15,16 @@ test('recherche, budget limite et liens des sources indépendants des fiches', a
   };
   let sourceBindings = 0;
   const sourceLink = { dataset: {}, addEventListener() { sourceBindings++; } };
-  const context = vm.createContext({ Intl, document: { querySelector: node,
+  const context = vm.createContext({ Intl, window: { sahraRate: { rate: 150.4338, date: '2026-11-20', status: 'ok' } }, document: { querySelector: node,
     querySelectorAll: (selector) => selector === '.detail' ? [sourceLink] : [],
   } });
   vm.runInContext(await readFile(new URL('./app.js', import.meta.url), 'utf8'), context);
   const search = () => node('#form').handlers.submit({ preventDefault() {} });
   node('#place').value = 'Djanet';
-  node('#budget').value = '71300';
+  node('#budget').value = '70700';
   search();
   assert.equal(node('#count').textContent, '2 voyages trouvés');
-  node('#budget').value = '71299';
+  node('#budget').value = '70699';
   search();
   assert.equal(node('#count').textContent, '0 voyage trouvé');
   node('#place').value = '';
@@ -33,6 +33,10 @@ test('recherche, budget limite et liens des sources indépendants des fiches', a
   search();
   assert.equal(node('#count').textContent, '2 voyages trouvés');
   assert.equal(sourceBindings, 0, 'les liens des sources ne doivent pas ouvrir une fiche');
+  vm.runInContext('openTrip(4)', context);
+  assert.ok(node('#modal').innerHTML.includes('70 700'));
+  assert.ok(node('#modal').innerHTML.includes('20 novembre 2026'));
+  assert.equal(node('#rateNote').textContent.includes('150,4338'), true);
   assert.doesNotThrow(() => vm.runInContext('openTrip(NaN)', context));
 });
 

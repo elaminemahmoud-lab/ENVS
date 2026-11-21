@@ -11,6 +11,7 @@ const files = new Map([
   ["/Sahra.html", ["Sahra.html", "text/html; charset=utf-8"]],
   ["/style.css", ["style.css", "text/css; charset=utf-8"]],
   ["/app.js", ["app.js", "text/javascript; charset=utf-8"]],
+  ["/taux-data.js", ["taux-data.js", "text/javascript; charset=utf-8"]],
   ["/veille.js", ["veille.js", "text/javascript; charset=utf-8"]],
   ["/veille-data.js", ["veille-data.js", "text/javascript; charset=utf-8"]],
   ["/flux.js", ["flux.js", "text/javascript; charset=utf-8"]],
@@ -32,6 +33,7 @@ createServer(async (request, response) => {
         if (!running) running = Promise.allSettled([
           run(process.execPath, [join(base, "veille-monitor.mjs")], { cwd: base, timeout: 180000 }),
           run(process.execPath, [join(base, "flux-monitor.mjs")], { cwd: base, timeout: 60000 }),
+          run(process.execPath, [join(base, "taux-monitor.mjs")], { cwd: base, timeout: 30000 }),
         ]).finally(() => { running = null; });
         await running;
       } else if (request.method !== "GET") {

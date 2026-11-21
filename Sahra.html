@@ -129,12 +129,11 @@
           <p class="note">
             Offres publiées par Ziguade Travel, Algérie Tours et Evaneos,
             prix et programmes consultés le 21 novembre 2026. Tarifs par personne
-            en euros ; conditions de groupe dans chaque fiche. Conversion indicative : 1 € =
-            151,688 DZD, taux officiel de la Banque d’Algérie du 12 novembre
-            2026 (taux fixe de référence, non actualisé automatiquement).
+            en euros ; conditions de groupe dans chaque fiche.
+            <span id="rateNote">Chargement du taux de conversion.</span>
             Le montant en DZD est une estimation ; prix, dates et places à confirmer auprès de l'agence.
             <a
-              href="https://www.bank-of-algeria.dz/stoodroa/2026/11/clean_cotation-1.pdf"
+              href="https://www.bank-of-algeria.dz/taux-de-change-journalier/"
               target="_blank"
               rel="noopener noreferrer"
               >Source du taux ↗</a
@@ -558,6 +557,7 @@
     <dialog id="dialog">
       <div class="modal" id="modal"></div>
     </dialog>
+    <script src="taux-data.js" defer></script>
     <script src="app.js" defer></script>
     <script src="veille-data.js" defer></script>
     <script src="veille.js" defer></script>

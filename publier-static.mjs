@@ -14,7 +14,7 @@ for (const name of ["veille-report.json", "flux-report.json"]) {
 await mkdir(output, { recursive: true });
 await copyFile(join(base, "Sahra.html"), join(output, "index.html"));
 for (const name of ["Sahra.html", "style.css", "app.js", "veille-data.js", "veille.js",
-  "flux-data.js", "flux.js", "strategie.js", "veille-report.json", "flux-report.json"]) {
+  "flux-data.js", "flux.js", "strategie.js", "veille-report.json", "flux-report.json", "taux-data.js", "taux-report.json"]) {
   await copyFile(join(base, name), join(output, name));
 }
 console.log("Site prêt dans dist/ pour GitHub Pages.");

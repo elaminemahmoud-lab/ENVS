@@ -43,8 +43,12 @@ Le workflow utilise le jeton temporaire fourni par GitHub Actions, sans clé API
 ## Vérifications locales
 
 ```powershell
-node --test veille-monitor.test.mjs flux-filters.test.mjs site.test.mjs
+node --test veille-monitor.test.mjs flux-filters.test.mjs site.test.mjs taux-monitor.test.mjs
 node publier-static.mjs
 ```
 
 `dist/` contient les fichiers du site à publier. Il est ignoré par Git et reconstruit par le workflow.
+
+## Conversion EUR/DZD
+
+`node taux-monitor.mjs` récupère le tableau quotidien de la Banque d’Algérie. Le workflow l’exécute à chaque collecte ; le bouton de contrôle local aussi. La cotation et sa date sont conservées dans `taux-report.json` et `taux-data.js`. En cas d’échec, la dernière valeur reste utilisable et le site le signale. Les prix en euros des agences restent la référence : la conversion n’inclut ni frais ni suppléments. Recharger la page après une collecte pour utiliser le nouveau taux ; une page déjà ouverte conserve une conversion cohérente avec son taux affiché.
