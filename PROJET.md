@@ -74,6 +74,8 @@ Pour ajouter une source, ajouter un objet `name`, `url` (HTTPS) et `kind` dans `
 
 ## Données et limites
 
+- Le 21 novembre 2026, les deux pages Evaneos et la page Pegamel (HTTP 403) ont été retirées de la collecte automatique. Elles restent liées dans le bloc « Sources à consulter manuellement ». La veille suit désormais les circuits Oran et Alger et Aurès et oasis d’Algérie Tours, ainsi que M’Zab Tours. Ce sont d’autres offres : elles ne valident pas les tarifs ni les disponibilités des circuits Evaneos. Les neuf voyages du catalogue restent inchangés. Chaque nouvelle source établit une première référence avant de pouvoir signaler une modification.
+
 - Les articles des rubriques et de la veille médias sont filtrés par `flux-filters.mjs` : éditeur appartenant à une liste explicite de domaines, titre lié au voyage et à l’Algérie, date valide dans les 90 derniers jours, puis dédoublonnage et tri par date. Le domaine de l’éditeur est lu dans le flux RSS, pas déduit de son nom affiché. Cette sélection peut écarter des articles pertinents et ne constitue pas une validation de leur contenu. Une collecte réussie sans article pertinent affiche zéro résultat. En cas d’échec, les anciens articles ne sont conservés que s’ils passent encore les filtres.
 - Les échecs des pages suivies incluent désormais une raison dans le rapport (statut HTTP, délai dépassé, contenu trop court ou connexion impossible). Le site distingue notamment un refus ou une limitation HTTP 403/429. Les liens restent consultables directement ; les sources ne sont pas supprimées pour masquer les erreurs.
 
