@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-15T12:52:17.859Z",
+  "checkedAt": "2026-11-21T18:07:14.657Z",
   "sources": [
     {
       "name": "Ziguade Travel",
@@ -13,7 +13,7 @@
       "url": "https://www.algerie-tours.com/nos-circuits/",
       "kind": "Circuits",
       "group": "agences",
-      "status": "unchanged"
+      "status": "changed"
     },
     {
       "name": "Evaneos · Alger et Tipaza",
@@ -69,38 +69,63 @@
       "url": "https://www.nomade-aventure.com/voyage-algerie",
       "kind": "Agence concurrente",
       "group": "concurrence",
-      "status": "unchanged"
+      "status": "changed"
     },
     {
       "name": "Terres d’Aventure · Algérie",
       "url": "https://www.terdav.com/ps-algerie/tp-circuit-accompagne",
       "kind": "Agence concurrente",
       "group": "concurrence",
-      "status": "unchanged"
+      "status": "changed"
     },
     {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
       "kind": "Innovation",
       "group": "technologie",
-      "status": "new"
+      "status": "changed"
     },
     {
       "name": "France Diplomatie · Entrée en Algérie",
       "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-entree-sejour",
       "kind": "Formalités",
       "group": "societale",
-      "status": "new"
+      "status": "unchanged"
     },
     {
       "name": "France Diplomatie · Sécurité",
       "url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-securite",
       "kind": "Sécurité",
       "group": "societale",
-      "status": "new"
+      "status": "unchanged"
     }
   ],
   "changes": [
+    {
+      "name": "APS · Innovation touristique",
+      "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
+      "at": "2026-11-21T18:07:14.657Z"
+    },
+    {
+      "name": "Terres d’Aventure · Algérie",
+      "url": "https://www.terdav.com/ps-algerie/tp-circuit-accompagne",
+      "at": "2026-11-21T18:07:14.657Z"
+    },
+    {
+      "name": "Nomade Aventure · Algérie",
+      "url": "https://www.nomade-aventure.com/voyage-algerie",
+      "at": "2026-11-21T18:07:14.657Z"
+    },
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-21T18:07:14.657Z"
+    },
+    {
+      "name": "Algérie Tours",
+      "url": "https://www.algerie-tours.com/nos-circuits/",
+      "at": "2026-11-21T18:07:14.657Z"
+    },
     {
       "name": "TourRadar · Algérie",
       "url": "https://www.tourradar.com/d/algeria",
