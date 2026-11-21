@@ -9,7 +9,7 @@ const trips = [
     price: 345,
     agency: "Ziguade Travel",
     summary:
-      "Séjour de 4 jours et 3 nuits au départ d’Alger. Prochain départ à confirmer auprès de l’agence.",
+      "4 jours au départ d’Alger. Le départ du 21 au 24 décembre 2026 est annoncé complet ; demander une autre date à l’agence. Tarif publié à titre de référence.",
     route: "Alger → Timimoun → Alger",
     included: [
       "Vol aller-retour",
@@ -92,7 +92,7 @@ const trips = [
     price: 470,
     agency: "Ziguade Travel",
     summary:
-      "Circuit Ihrir, Essendilène et Tikoubaouine. Plusieurs départs annoncés entre décembre 2026 et février 2027.",
+      "Circuit de 7 jours à 470 € : départs annoncés en janvier et février 2027. Variante du 19 au 26 décembre 2026 : 8 jours à 490 € par personne. Places à confirmer.",
     route: "Alger → Djanet → Ihrir → Essendilène → Tikoubaouine",
     included: ["Vol aller-retour", "Pension complète", "Bivouac", "Excursions"],
     source: "https://ziguadetravel.com/",
@@ -109,7 +109,7 @@ const trips = [
     price: 1560,
     agency: "Agence locale de Sofiane via Evaneos",
     summary:
-      "Voyage personnalisable à Alger, Tipaza et Chréa. Prix de départ pour deux personnes, hors vols internationaux.",
+      "Voyage personnalisable à Alger, Tipaza et Chréa. Tarif par personne calculé pour un groupe de deux, hors vols internationaux.",
     route: "Alger → Casbah → Tipaza → Chréa",
     included: [
       "Itinéraire personnalisable",
@@ -154,7 +154,7 @@ const trips = [
     price: 2270,
     agency: "Agence locale de Sofiane via Evaneos",
     summary:
-      "Alger, Constantine, les sites romains et les Aurès. Voyage personnalisable ; prix de départ pour deux personnes.",
+      "Alger, Constantine, les sites romains et les Aurès. Tarif par personne calculé pour un groupe de deux, hors vols internationaux.",
     route: "Alger → Sétif → Djémila → Constantine → Timgad → Biskra",
     included: [
       "Itinéraire personnalisable",
@@ -177,9 +177,9 @@ const trips = [
     price: 2095,
     agency: "Algérie Tours",
     summary:
-      "Tipaza, Djémila, Timgad, Constantine et Ghardaïa dans un circuit culturel de dix jours.",
+      "Circuit culturel de dix jours. Offre annoncée pour un groupe d’au moins dix participants, avec vols depuis la France. Pour un autre effectif, demander un devis.",
     route: "Alger → Tipaza → Djémila → Constantine → Timgad → Ghardaïa",
-    included: ["Circuit accompagné", "Sites romains", "Vallée du M’Zab"],
+    included: ["Guide accompagnateur", "Hôtels 4 étoiles", "Pension complète", "Vol aller-retour depuis la France"],
     source:
       "https://www.algerie-tours.com/circuit-les-villes-romaines-dalgerie-loasis-de-ghardaia/",
     contact:
@@ -191,6 +191,11 @@ const trips = [
 const rate = 151.688;
 const dzd = (n) => Math.round((n * rate) / 100) * 100;
 const fmt = (n) => new Intl.NumberFormat("fr-DZ").format(n);
+const priceConditions = (trip) => [6, 8].includes(trip.id)
+  ? "Tarif par personne sur la base de deux voyageurs, hors vols internationaux."
+  : trip.id === 7 ? "Tarif par personne sur une base de quatre participants ; dès deux avec supplément. Vols depuis la France inclus."
+  : trip.id === 9 ? "Tarif par personne pour un groupe annoncé de dix participants ou plus. Vols depuis la France inclus."
+  : "Tarif publié par personne au départ d’Alger ; dates et places à confirmer.";
 let shown = trips;
 const cards = document.querySelector("#cards");
 function render(list) {
@@ -205,7 +210,7 @@ function render(list) {
     ? list
         .map(
           (t) =>
-            `<article class="card"><div class="photo" style="background-image:url('${t.image}')"><span class="tag">${t.type} · ${t.days} jours</span></div><div class="body"><div class="loc">${t.place}</div><h3>${t.title}</h3><a class="meta" href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(decodeURIComponent(t.image.split("/").pop().split("?")[0]))}" target="_blank" rel="noopener noreferrer">Crédit photo ↗</a><div class="meta">Proposé par ${t.agency}</div><p class="desc">${t.summary}</p><div class="bottom"><div class="price"><strong>${fmt(dzd(t.price))} DZD</strong><small>par personne · ≈</small></div><button class="detail" data-id="${t.id}">Voir le voyage</button></div></div></article>`,
+            `<article class="card"><div class="photo" style="background-image:url('${t.image}')"><span class="tag">${t.type} · ${t.days} jours</span></div><div class="body"><div class="loc">${t.place}</div><h3>${t.title}</h3><a class="meta" href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(decodeURIComponent(t.image.split("/").pop().split("?")[0]))}" target="_blank" rel="noopener noreferrer">Crédit photo ↗</a><div class="meta">Proposé par ${t.agency}</div><p class="desc">${t.summary}</p><div class="bottom"><div class="price"><strong>${fmt(dzd(t.price))} DZD</strong><small>≈ ${fmt(t.price)} € / personne</small></div><button class="detail" data-id="${t.id}">Voir le voyage</button></div></div></article>`,
         )
         .join("")
     : `<div class="empty"><h3>Aucun voyage ne correspond à ces critères.</h3><p>Essayez un budget plus élevé, une durée plus longue ou une autre destination.</p><button id="reset">Effacer les filtres</button></div>`;
@@ -220,7 +225,7 @@ function render(list) {
 function openTrip(id) {
   const t = trips.find((x) => x.id === id);
   document.querySelector("#modal").innerHTML =
-    `<button class="close" aria-label="Fermer">×</button><div class="loc">${t.place} · ${t.type}</div><h2>${t.title}</h2><p>${t.summary}</p><p><b>Itinéraire :</b> ${t.route}</p><p><b>Durée :</b> ${t.days} jours &nbsp; <b>Prix indicatif :</b> ${fmt(dzd(t.price))} DZD par personne · ${fmt(dzd(t.price) * (+document.querySelector("#people").value || 1))} DZD pour le groupe</p><h3>Prestations incluses</h3><div>${t.included.map((x) => `<span class="badge">${x}</span>`).join("")}</div><h3>Agence organisatrice</h3><p><b>${t.agency}</b> · Agence réelle · voir la source officielle</p><p class="warn">Prix en DZD estimé au taux officiel du 12 novembre 2026 (1 € = 151,688 DZD). Le tarif de l’agence reste en euros ; confirmez le montant et les places auprès d’elle.</p><a class="contact" href="${t.contact}" target="_blank" rel="noopener noreferrer">Contacter l'agence ↗</a> <a href="${t.source}" target="_blank" rel="noopener noreferrer">Voir la source</a>`;
+    `<button class="close" aria-label="Fermer">×</button><div class="loc">${t.place} · ${t.type}</div><h2>${t.title}</h2><p>${t.summary}</p><p><b>Itinéraire :</b> ${t.route}</p><p><b>Durée :</b> ${t.days} jours &nbsp; <b>À partir de :</b> ${fmt(t.price)} € par personne (≈ ${fmt(dzd(t.price))} DZD)</p><p>${priceConditions(t)}</p><p><b>Estimation pour votre groupe :</b> ${fmt(dzd(t.price) * (+document.querySelector("#people").value || 1))} DZD. Simple multiplication du tarif de référence, hors suppléments ; devis nécessaire selon l’effectif et les dates.</p><p class="meta">Prix et programme consultés le 21 novembre 2026. La veille automatique ne vérifie pas les places disponibles.</p><h3>Prestations et programme annoncés</h3><div>${t.included.map((x) => `<span class="badge">${x}</span>`).join("")}</div><h3>Agence organisatrice</h3><p><b>${t.agency}</b> · Agence réelle · voir la source officielle</p><p class="warn">Prix en DZD estimé au taux officiel du 12 novembre 2026 (1 € = 151,688 DZD). Le tarif de l’agence reste en euros ; confirmez le montant et les places auprès d’elle.</p><a class="contact" href="${t.contact}" target="_blank" rel="noopener noreferrer">Contacter l'agence ↗</a> <a href="${t.source}" target="_blank" rel="noopener noreferrer">Voir la source</a>`;
   document.querySelector("#dialog").showModal();
   document.querySelector(".close").onclick = () =>
     document.querySelector("#dialog").close();
