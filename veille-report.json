@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T18:39:21.793Z",
+  "checkedAt": "2026-11-21T18:43:49.536Z",
   "sources": [
     {
       "name": "Ziguade Travel",
@@ -83,7 +83,7 @@
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
       "kind": "Innovation",
       "group": "technologie",
-      "status": "unchanged"
+      "status": "changed"
     },
     {
       "name": "France Diplomatie · Entrée en Algérie",
@@ -101,6 +101,16 @@
     }
   ],
   "changes": [
+    {
+      "name": "APS · Innovation touristique",
+      "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
+      "at": "2026-11-21T18:43:49.536Z"
+    },
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-21T18:43:49.536Z"
+    },
     {
       "name": "TourRadar · Algérie",
       "url": "https://www.tourradar.com/d/algeria",
