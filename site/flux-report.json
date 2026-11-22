@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-22T09:20:20.624Z",
+  "checkedAt": "2026-11-22T13:57:51.907Z",
   "media": {
-    "status": "ok",
+    "status": "error",
     "items": [
       {
         "title": "Tourisme en Algérie : des opportunités d’investissement présentées à la diaspora - Diasporas",
@@ -51,11 +51,11 @@
   },
   "topics": {
     "technologie": {
-      "status": "ok",
+      "status": "error",
       "items": []
     },
     "commerciale": {
-      "status": "ok",
+      "status": "error",
       "items": [
         {
           "title": "Nouvelair Black Friday : -30 % sur tous les vols, dont l’Algérie et la France - Visas & Voyages Algérie",
@@ -108,7 +108,7 @@
       ]
     },
     "societale": {
-      "status": "ok",
+      "status": "error",
       "items": [
         {
           "title": "Aéroport d’Alger : il voyageait avec un passeport diplomatique volé et un faux visa - Visas & Voyages Algérie",

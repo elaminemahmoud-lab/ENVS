@@ -1,1 +1,1 @@
-window.sahraRate = {"rate":150.4338,"date":"2026-11-20","source":"https://www.bank-of-algeria.dz/taux-de-change-journalier/","checkedAt":"2026-11-22T09:20:10.018Z","status":"error","error":"fetch failed"};
+window.sahraRate = {"rate":150.4338,"date":"2026-11-20","source":"https://www.bank-of-algeria.dz/taux-de-change-journalier/","checkedAt":"2026-11-22T13:57:39.019Z","status":"error","error":"fetch failed"};
