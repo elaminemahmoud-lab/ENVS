@@ -1,6 +1,6 @@
 # Sahra — voyages et veille en Algérie
 
-Lire [PROJET.md](PROJET.md) pour connaître l’objectif, les sources et les limites réelles du projet.
+Lire [PROJET.md](docs/PROJET.md) pour connaître l’objectif, les sources et les limites réelles du projet.
 
 ## Utilisation locale
 
@@ -43,12 +43,23 @@ Le workflow utilise le jeton temporaire fourni par GitHub Actions, sans clé API
 ## Vérifications locales
 
 ```powershell
-node --test veille-monitor.test.mjs flux-filters.test.mjs flux-monitor.test.mjs site.test.mjs serveur.test.mjs taux-monitor.test.mjs
-node publier-static.mjs
+node --test tests/veille-monitor.test.mjs tests/flux-filters.test.mjs tests/flux-monitor.test.mjs tests/site.test.mjs tests/serveur.test.mjs tests/taux-monitor.test.mjs
+node scripts/publier-static.mjs
 ```
 
 `dist/` contient les fichiers du site à publier. Il est ignoré par Git et reconstruit par le workflow.
 
 ## Conversion EUR/DZD
 
-`node taux-monitor.mjs` récupère le tableau quotidien de la Banque d’Algérie. Le workflow l’exécute à chaque collecte ; le bouton de contrôle local aussi. La cotation et sa date sont conservées dans `taux-report.json` et `taux-data.js`. En cas d’échec, la dernière valeur reste utilisable et le site le signale. Les prix en euros des agences restent la référence : la conversion n’inclut ni frais ni suppléments. Recharger la page après une collecte pour utiliser le nouveau taux ; une page déjà ouverte conserve une conversion cohérente avec son taux affiché.
+`node scripts/taux-monitor.mjs` récupère le tableau quotidien de la Banque d’Algérie. Le workflow l’exécute à chaque collecte ; le bouton de contrôle local aussi. La cotation et sa date sont conservées dans `site/taux-report.json` et `site/taux-data.js`. En cas d’échec, la dernière valeur reste utilisable et le site le signale. Les prix en euros des agences restent la référence : la conversion n’inclut ni frais ni suppléments. Recharger la page après une collecte pour utiliser le nouveau taux ; une page déjà ouverte conserve une conversion cohérente avec son taux affiché.
+
+## Organisation des fichiers
+
+- `site/` : page HTML, styles, JavaScript du navigateur et rapports publics. Pour ouvrir sans serveur : `site/Sahra.html`.
+- `scripts/` : collecte automatique, filtres et préparation de la publication.
+- `donnees/` : liste des sources et état interne de la veille.
+- `tests/` : tests du site, du serveur et des collecteurs.
+- `docs/` : présentation du projet.
+- `.github/workflows/veille.yml` : planification et publication sur GitHub.
+- `serveur.mjs` : point de démarrage du serveur local.
+- `dist/` : résultat généré pour la publication.

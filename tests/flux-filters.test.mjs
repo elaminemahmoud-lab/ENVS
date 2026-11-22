@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { selectNews } from './flux-filters.mjs';
+import { selectNews } from '../scripts/flux-filters.mjs';
 
 const now = Date.parse('2026-11-21T18:00:00Z');
 const item = (title, extra = {}) => ({ title, publisherUrl: 'https://www.aps.dz',

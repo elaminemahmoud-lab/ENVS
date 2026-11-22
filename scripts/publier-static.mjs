@@ -3,8 +3,8 @@ import { copyFile, mkdir, readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const base = dirname(fileURLToPath(import.meta.url));
-const output = join(base, "dist");
+const base = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
+const output = join(base, "..", "dist");
 for (const name of ["veille-report.json", "flux-report.json"]) {
   const report = JSON.parse(await readFile(join(base, name), "utf8"));
   if (!report.checkedAt || !Number.isFinite(Date.parse(report.checkedAt))) {

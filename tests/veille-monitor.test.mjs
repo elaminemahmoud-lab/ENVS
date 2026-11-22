@@ -19,7 +19,7 @@ test("premier relevé, changement et échec conservent la référence", async ()
     // Le préchargeur fournit une page locale pour tester la comparaison hors réseau.
     const preload = join(dir, "fetch.mjs");
     await writeFile(preload, `import { readFile } from "node:fs/promises"; globalThis.fetch = async () => { const text = await readFile(${JSON.stringify(fixture)}, "utf8"); return new Response(text, { status: text === "FAIL" ? 503 : 200 }); };`);
-    const script = join(dirname(fileURLToPath(import.meta.url)), "veille-monitor.mjs");
+    const script = join(dirname(fileURLToPath(import.meta.url)), "..", "scripts", "veille-monitor.mjs");
     const { execFile } = await import("node:child_process");
     const { promisify } = await import("node:util");
     const runAsync = promisify(execFile);

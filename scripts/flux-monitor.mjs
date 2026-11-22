@@ -3,7 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { selectNews, selectSocial } from "./flux-filters.mjs";
 
-const base = dirname(fileURLToPath(import.meta.url));
+const base = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
 const reportFile = process.env.SAHRA_FLUX_REPORT || join(base, "flux-report.json");
 const outputFile = process.env.SAHRA_FLUX_OUTPUT || join(base, "flux-data.js");
 const mediaUrl = "https://news.google.com/rss/search?q=tourisme+Alg%C3%A9rie&hl=fr&gl=DZ&ceid=DZ:fr";

@@ -6,11 +6,11 @@ Sahra est un site de découverte et de planification de voyages en Algérie. Le 
 
 ## Outil de veille
 
-Le projet utilise maintenant `veille-monitor.mjs`, un outil de suivi de pages officielles sans dépendance externe. Les pages à surveiller sont dans `veille-sources.json` : sites d'agences et pages de circuits. À chaque contrôle, l'outil télécharge le texte de chaque page, calcule son empreinte SHA-256 et la compare au dernier contrôle conservé dans `veille-state.json`. Un premier contrôle établit la référence ; les suivants signalent les pages modifiées, inchangées ou inaccessibles. Le rapport est publié dans `veille-data.js` et affiché par `veille.js` dans la section « Veille » du site.
+Le projet utilise maintenant `scripts/veille-monitor.mjs`, un outil de suivi de pages officielles sans dépendance externe. Les pages à surveiller sont dans `donnees/veille-sources.json` : sites d'agences et pages de circuits. À chaque contrôle, l'outil télécharge le texte de chaque page, calcule son empreinte SHA-256 et la compare au dernier contrôle conservé dans `donnees/veille-state.json`. Un premier contrôle établit la référence ; les suivants signalent les pages modifiées, inchangées ou inaccessibles. Le rapport est publié dans `site/veille-data.js` et affiché par `site/veille.js` dans la section « Veille » du site.
 
 La même liste comprend trois pages de **concurrents** : TourRadar, Nomade Aventure et Terres d'Aventure. Leurs résultats sont affichés séparément dans la section « Veille concurrentielle ».
 
-`flux-monitor.mjs` ajoute une **veille médias** à partir d'une recherche RSS Google Actualités « tourisme Algérie » et une **veille réseaux sociaux** à partir des publications publiques Mastodon associées aux mots-dièses Algérie et Djanet. Le rapport `flux-report.json` est affiché par `flux.js`. Les publications sociales de plus de 90 jours sont ignorées. Ces sources publiques sont gratuites et ne demandent ni compte ni clé API.
+`scripts/flux-monitor.mjs` ajoute une **veille médias** à partir d'une recherche RSS Google Actualités « tourisme Algérie » et une **veille réseaux sociaux** à partir des publications publiques Mastodon associées aux mots-dièses Algérie et Djanet. Le rapport `site/flux-report.json` est affiché par `site/flux.js`. Les publications sociales de plus de 90 jours sont ignorées. Ces sources publiques sont gratuites et ne demandent ni compte ni clé API.
 
 ## Les quatre veilles du devoir
 
@@ -36,56 +36,56 @@ Ouvrir ensuite `http://127.0.0.1:3000` et utiliser le bouton **Contrôler mainte
 Pour effectuer un contrôle manuel sans serveur :
 
 ```powershell
-node veille-monitor.mjs
-node flux-monitor.mjs
+node scripts/veille-monitor.mjs
+node scripts/flux-monitor.mjs
 ```
 
-Ouvrir ensuite `Sahra.html` dans le navigateur. La page peut être ouverte directement depuis le disque, car le rapport est un fichier JavaScript local ; le bouton de contrôle réseau n'apparaît que lorsque le serveur local est disponible.
+Ouvrir ensuite `site/Sahra.html` dans le navigateur. La page peut être ouverte directement depuis le disque, car le rapport est un fichier JavaScript local ; le bouton de contrôle réseau n'apparaît que lorsque le serveur local est disponible.
 
-Le workflow `.github/workflows/veille.yml` est préparé pour un contrôle **chaque heure, à la minute 23**, ainsi qu’à chaque envoi sur la branche `main` et sur lancement manuel. Il contrôle les sources, enregistre l’état et les rapports dans le dépôt, puis publie le site sur **GitHub Pages**. `publier-static.mjs` prépare dans `dist/` uniquement les fichiers publics et copie `Sahra.html` en `index.html`. Les rapports JSON sont inclus pour qu’une page ouverte puisse récupérer les nouvelles données toutes les cinq minutes et à son retour au premier plan. Les dates affichées utilisent l’heure d’Alger. Le serveur local fournit aussi ces rapports.
+Le workflow `.github/workflows/veille.yml` est préparé pour un contrôle **chaque heure, à la minute 23**, ainsi qu’à chaque envoi sur la branche `main` et sur lancement manuel. Il contrôle les sources, enregistre l’état et les rapports dans le dépôt, puis publie le site sur **GitHub Pages**. `scripts/publier-static.mjs` prépare dans `dist/` uniquement les fichiers publics et copie `site/Sahra.html` en `index.html`. Les rapports JSON sont inclus pour qu’une page ouverte puisse récupérer les nouvelles données toutes les cinq minutes et à son retour au premier plan. Les dates affichées utilisent l’heure d’Alger. Le serveur local fournit aussi ces rapports.
 
-Cette configuration n’est **pas encore active sur GitHub** tant que le dossier n’a pas été envoyé sur un dépôt, que GitHub Pages n’a pas été configuré avec la source **GitHub Actions** et qu’une exécution n’a pas réussi. Voir `README.md` pour la procédure. Les contrôles planifiés de GitHub peuvent être retardés ou omis ; consulter la date du dernier contrôle affichée sur le site. Il ne s’agit pas d’un suivi instantané. Une collecte en échec est signalée dans les journaux ; le workflow essaie néanmoins de publier les rapports disponibles.
+Cette configuration n’est **pas encore active sur GitHub** tant que le dossier n’a pas été envoyé sur un dépôt, que GitHub Pages n’a pas été configuré avec la source **GitHub Actions** et qu’une exécution n’a pas réussi. Voir `../README.md` pour la procédure. Les contrôles planifiés de GitHub peuvent être retardés ou omis ; consulter la date du dernier contrôle affichée sur le site. Il ne s’agit pas d’un suivi instantané. Une collecte en échec est signalée dans les journaux ; le workflow essaie néanmoins de publier les rapports disponibles.
 
 La veille générale programmée dans le chat Codex est indépendante : elle ne lance pas ces scripts et ne publie pas Sahra.
 
-Pour ajouter une source, ajouter un objet `name`, `url` (HTTPS) et `kind` dans `veille-sources.json`. Utiliser de préférence la page précise d'un circuit, afin de limiter les changements sans rapport. Aucun identifiant ni clé API n'est nécessaire.
+Pour ajouter une source, ajouter un objet `name`, `url` (HTTPS) et `kind` dans `donnees/veille-sources.json`. Utiliser de préférence la page précise d'un circuit, afin de limiter les changements sans rapport. Aucun identifiant ni clé API n'est nécessaire.
 
 ## Fichiers
 
 | Fichier | Rôle |
 | --- | --- |
-| `Sahra.html` | Structure et contenu du site. |
-| `style.css` | Mise en page et adaptation mobile. |
-| `app.js` | Circuits, filtres et calculs en DZD. |
-| `veille-sources.json` | Liste des pages suivies, y compris les concurrents. |
-| `veille-monitor.mjs` | Comparaison et production du rapport de veille. |
+| `site/Sahra.html` | Structure et contenu du site. |
+| `site/style.css` | Mise en page et adaptation mobile. |
+| `site/app.js` | Circuits, filtres et calculs en DZD. |
+| `donnees/veille-sources.json` | Liste des pages suivies, y compris les concurrents. |
+| `scripts/veille-monitor.mjs` | Comparaison et production du rapport de veille. |
 | `serveur.mjs` | Site local avec accès réseau et contrôle à la demande. |
-| `veille-state.json` | Empreintes des pages après le premier contrôle. |
-| `veille-report.json` | Rapport au format JSON pour le serveur. |
-| `veille-data.js` | Rapport lu par le site. |
-| `veille.js` | Affichage du rapport. |
-| `flux-monitor.mjs` | Collecte des actualités et publications publiques. |
-| `flux-report.json` et `flux-data.js` | Rapport des flux pour le serveur et le site. |
-| `flux.js` | Affichage des actualités et publications. |
-| `strategie.js` | Tableau de bord des quatre veilles et export CSV. |
+| `donnees/veille-state.json` | Empreintes des pages après le premier contrôle. |
+| `site/veille-report.json` | Rapport au format JSON pour le serveur. |
+| `site/veille-data.js` | Rapport lu par le site. |
+| `site/veille.js` | Affichage du rapport. |
+| `scripts/flux-monitor.mjs` | Collecte des actualités et publications publiques. |
+| `site/flux-report.json` et `site/flux-data.js` | Rapport des flux pour le serveur et le site. |
+| `site/flux.js` | Affichage des actualités et publications. |
+| `site/strategie.js` | Tableau de bord des quatre veilles et export CSV. |
 | `.github/workflows/veille.yml` | Contrôle horaire et publication sur GitHub Pages après activation. |
-| `publier-static.mjs` | Préparation des fichiers publics pour GitHub Pages. |
+| `scripts/publier-static.mjs` | Préparation des fichiers publics pour GitHub Pages. |
 | `README.md` | Installation locale et activation de la publication GitHub. |
 
 ## Données et limites
 
 - Le 21 novembre 2026, les deux pages Evaneos et la page Pegamel (HTTP 403) ont été retirées de la collecte automatique. Elles restent liées dans le bloc « Sources à consulter manuellement ». La veille suit désormais les circuits Oran et Alger et Aurès et oasis d’Algérie Tours, ainsi que M’Zab Tours. Ce sont d’autres offres : elles ne valident pas les tarifs ni les disponibilités des circuits Evaneos. Les neuf voyages du catalogue restent inchangés. Chaque nouvelle source établit une première référence avant de pouvoir signaler une modification.
 
-- Les articles des rubriques et de la veille médias sont filtrés par `flux-filters.mjs` : éditeur appartenant à une liste explicite de domaines, titre lié au voyage et à l’Algérie, date valide dans les 90 derniers jours, puis dédoublonnage et tri par date. Le domaine de l’éditeur est lu dans le flux RSS, pas déduit de son nom affiché. Cette sélection peut écarter des articles pertinents et ne constitue pas une validation de leur contenu. Une collecte réussie sans article pertinent affiche zéro résultat. En cas d’échec, les anciens articles ne sont conservés que s’ils passent encore les filtres.
+- Les articles des rubriques et de la veille médias sont filtrés par `scripts/flux-filters.mjs` : éditeur appartenant à une liste explicite de domaines, titre lié au voyage et à l’Algérie, date valide dans les 90 derniers jours, puis dédoublonnage et tri par date. Le domaine de l’éditeur est lu dans le flux RSS, pas déduit de son nom affiché. Cette sélection peut écarter des articles pertinents et ne constitue pas une validation de leur contenu. Une collecte réussie sans article pertinent affiche zéro résultat. En cas d’échec, les anciens articles ne sont conservés que s’ils passent encore les filtres.
 - Les échecs des pages suivies incluent désormais une raison dans le rapport (statut HTTP, délai dépassé, contenu trop court ou connexion impossible). Le site distingue notamment un refus ou une limitation HTTP 403/429. Les liens restent consultables directement ; les sources ne sont pas supprimées pour masquer les erreurs.
 
-- Les circuits affichés dans `app.js` restent une sélection ajoutée manuellement à partir de Ziguade Travel, Algérie Tours et Evaneos. **La veille ne modifie jamais automatiquement les prix ni les disponibilités.** Un changement de page invite à revérifier la source officielle.
+- Les circuits affichés dans `site/app.js` restent une sélection ajoutée manuellement à partir de Ziguade Travel, Algérie Tours et Evaneos. **La veille ne modifie jamais automatiquement les prix ni les disponibilités.** Un changement de page invite à revérifier la source officielle.
 - Certains sites peuvent bloquer les requêtes automatiques ou rendre leurs offres uniquement avec JavaScript. Dans ce cas, le résultat est « Contrôle impossible » ou le changement n'est pas détecté. L'ancien état est conservé en cas d'échec.
 - Au premier contrôle du 15 novembre 2026, Evaneos et Pegamel Travel ont répondu HTTP 403 à l'outil ; leurs pages restent suivies mais le rapport affiche leur échec. Les trois sources concurrentielles suivies sont [TourRadar](https://www.tourradar.com/d/algeria), [Nomade Aventure](https://www.nomade-aventure.com/voyage-algerie) et [Terres d'Aventure](https://www.terdav.com/ps-algerie/tp-circuit-accompagne).
 - La comparaison porte sur le texte de la page entière. Une modification sans rapport avec les voyages peut donc déclencher un signal. Les changements ne constituent pas des offres validées.
 - Les résultats médias sont des liens de recherche, pas des articles vérifiés par Sahra. Le format du flux RSS Google Actualités peut évoluer. L'API Mastodon peut retourner peu de publications pertinentes ou être indisponible ; elle ne couvre pas Facebook, Instagram ou TikTok, dont l'accès automatisé public est limité.
 - Les pages France Diplomatie concernent les voyageurs français. Les formalités applicables dépendent de la nationalité du voyageur ; le site renvoie à la source officielle et ne donne pas de conseil personnalisé.
-- Les prix en euros sont convertis avec le dernier taux EUR/DZD disponible dans `taux-data.js`. `taux-monitor.mjs` consulte le tableau quotidien de la Banque d’Algérie à chaque exécution du workflow et lors d’un contrôle local. Le site affiche la date de cotation et signale un échec de récupération ou une cotation de plus de sept jours. Un échec conserve la dernière valeur ; une date antérieure ou une variation supérieure à 20 % est refusée pour vérification. La référence initiale est 150,4338 DZD au 20 novembre 2026, consultée sur la page officielle le 21 novembre. Il faut recharger la page pour utiliser un nouveau taux. La conversion est indicative et ne comprend pas les frais ; elle ne met pas à jour les prix en euros des agences.
+- Les prix en euros sont convertis avec le dernier taux EUR/DZD disponible dans `site/taux-data.js`. `scripts/taux-monitor.mjs` consulte le tableau quotidien de la Banque d’Algérie à chaque exécution du workflow et lors d’un contrôle local. Le site affiche la date de cotation et signale un échec de récupération ou une cotation de plus de sept jours. Un échec conserve la dernière valeur ; une date antérieure ou une variation supérieure à 20 % est refusée pour vérification. La référence initiale est 150,4338 DZD au 20 novembre 2026, consultée sur la page officielle le 21 novembre. Il faut recharger la page pour utiliser un nouveau taux. La conversion est indicative et ne comprend pas les frais ; elle ne met pas à jour les prix en euros des agences.
 - Les photos proviennent de Wikimedia Commons, avec un lien vers leurs crédits.
 
 ## Sources techniques

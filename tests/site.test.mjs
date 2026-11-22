@@ -18,7 +18,7 @@ test('recherche, budget limite et liens des sources indépendants des fiches', a
   const context = vm.createContext({ Intl, window: { sahraRate: { rate: 150.4338, date: '2026-11-20', status: 'ok' } }, document: { querySelector: node,
     querySelectorAll: (selector) => selector === '.detail' ? [sourceLink] : [],
   } });
-  vm.runInContext(await readFile(new URL('./app.js', import.meta.url), 'utf8'), context);
+  vm.runInContext(await readFile(new URL('../site/app.js', import.meta.url), 'utf8'), context);
   const search = () => node('#form').handlers.submit({ preventDefault() {} });
   node('#place').value = 'Djanet';
   node('#budget').value = '70700';
@@ -55,7 +55,7 @@ test('format CSV en mémoire : domaines, dates, accents, séparateurs et formule
     Blob: class { constructor(parts) { csv = parts.join(''); } },
     URL: { createObjectURL: () => 'blob:test', revokeObjectURL() {} },
   });
-  vm.runInContext(await readFile(new URL('./strategie.js', import.meta.url), 'utf8'), context);
+  vm.runInContext(await readFile(new URL('../site/strategie.js', import.meta.url), 'utf8'), context);
   callback();
   assert.ok(csv.startsWith('\ufeff"Veille";'));
   assert.ok(csv.includes('"Commerciale";"2026-11-21T19:00:00Z"'));
@@ -80,7 +80,7 @@ test('veille sans rapport initial et échec HTTP du contrôle : affiche une erre
       ? { ok: false, status: 503, json: async () => ({ error: 'indisponible' }) }
       : { ok: false },
   });
-  vm.runInContext(await readFile(new URL('./veille.js', import.meta.url), 'utf8'), context);
+  vm.runInContext(await readFile(new URL('../site/veille.js', import.meta.url), 'utf8'), context);
   assert.match(node('#veilleStatus').textContent, /premier contrôle/);
   context.window.sahraVeille = report;
   vm.runInContext('renderVeille(window.sahraVeille)', context);

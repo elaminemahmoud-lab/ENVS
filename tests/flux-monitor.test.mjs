@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { selectSocial } from './flux-filters.mjs';
+import { selectSocial } from '../scripts/flux-filters.mjs';
 
 const now = Date.parse('2026-11-22T00:00:00Z');
 const item = (name, days = 1, extra = {}) => ({ title: `Voyage Djanet ${name}`, url: `https://mastodon.social/@test/${name}`, date: new Date(now - days * 86400000).toISOString(), ...extra });
@@ -29,7 +29,7 @@ test('le moniteur filtre les publications reçues puis celles conservées après
     const output = join(dir, 'data.js');
     const preload = join(dir, 'fetch.mjs');
     const mode = join(dir, 'mode.txt');
-    const script = fileURLToPath(new URL('./flux-monitor.mjs', import.meta.url));
+    const script = fileURLToPath(new URL('../scripts/flux-monitor.mjs', import.meta.url));
     await writeFile(mode, 'ok');
     await writeFile(preload, `import { readFile } from 'node:fs/promises';
       globalThis.fetch = async (url) => {

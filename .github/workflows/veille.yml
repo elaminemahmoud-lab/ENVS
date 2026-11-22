@@ -31,19 +31,19 @@ jobs:
         with:
           node-version: "24"
       - name: Vérifier le moniteur
-        run: node --test veille-monitor.test.mjs flux-filters.test.mjs flux-monitor.test.mjs site.test.mjs serveur.test.mjs taux-monitor.test.mjs
+        run: node --test tests/veille-monitor.test.mjs tests/flux-filters.test.mjs tests/flux-monitor.test.mjs tests/site.test.mjs tests/serveur.test.mjs tests/taux-monitor.test.mjs
       - name: Actualiser le taux EUR/DZD
         id: taux
         continue-on-error: true
-        run: node taux-monitor.mjs
+        run: node scripts/taux-monitor.mjs
       - name: Contrôler les sources
         id: pages
         continue-on-error: true
-        run: node veille-monitor.mjs
+        run: node scripts/veille-monitor.mjs
       - name: Contrôler les médias et réseaux sociaux
         id: flux
         continue-on-error: true
-        run: node flux-monitor.mjs
+        run: node scripts/flux-monitor.mjs
       - name: Signaler les échecs de collecte
         if: steps.pages.outcome == 'failure' || steps.flux.outcome == 'failure' || steps.taux.outcome == 'failure'
         run: echo "::warning::Une collecte a échoué. Consulter les journaux et la date des rapports sur le site."
@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add veille-state.json veille-data.js veille-report.json flux-data.js flux-report.json taux-report.json taux-data.js
+          git add donnees/veille-state.json site/veille-data.js site/veille-report.json site/flux-data.js site/flux-report.json site/taux-report.json site/taux-data.js
           if ! git diff --cached --quiet; then
             git commit -m "Mise à jour de la veille Sahra"
             # Intégrer les commits arrivés pendant la collecte, sans forcer
@@ -60,7 +60,7 @@ jobs:
             git push origin HEAD:main
           fi
       - name: Préparer uniquement les fichiers publics
-        run: node publier-static.mjs
+        run: node scripts/publier-static.mjs
       - name: Configurer GitHub Pages
         uses: actions/configure-pages@v5
       - name: Préparer la publication

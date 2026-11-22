@@ -3,7 +3,7 @@ import test from 'node:test';
 import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { createSahraHandler } from './serveur.mjs';
+import { createSahraHandler } from '../serveur.mjs';
 
 // Exerce le vrai gestionnaire HTTP sans ouvrir de port réseau.
 async function request(handler, url, method = 'GET') {
@@ -22,7 +22,7 @@ async function request(handler, url, method = 'GET') {
 }
 
 test('sert tous les fichiers du navigateur, les rapports actualisables et les API', async () => {
-  const html = await readFile(new URL('./Sahra.html', import.meta.url), 'utf8');
+  const html = await readFile(new URL('../site/Sahra.html', import.meta.url), 'utf8');
   const handler = createSahraHandler();
   const assets = [...html.matchAll(/(?:src|href)="([^"#]+\.(?:js|css))"/g)].map((m) => '/' + m[1]);
   for (const url of ['/', '/Sahra.html', ...assets, '/veille-report.json?t=123', '/flux-report.json', '/taux-report.json', '/api/veille', '/api/flux']) {

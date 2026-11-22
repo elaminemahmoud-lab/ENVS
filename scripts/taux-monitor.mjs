@@ -52,7 +52,7 @@ export async function updateRate(previous, get = fetch, now = Date.now()) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const base = dirname(fileURLToPath(import.meta.url));
+  const base = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
   const reportPath = process.env.SAHRA_RATE_REPORT || join(base, 'taux-report.json');
   const outputPath = process.env.SAHRA_RATE_OUTPUT || join(base, 'taux-data.js');
   const previous = JSON.parse(await readFile(reportPath, 'utf8'));

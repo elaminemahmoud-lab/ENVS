@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { parseRate, updateRate } from './taux-monitor.mjs';
+import { parseRate, updateRate } from '../scripts/taux-monitor.mjs';
 
 const now = Date.parse('2026-11-21T19:00:00Z');
 const table = (date = '20-11-2026', value = '150.4338') => `<table><tr><th></th><th>${date}</th><th>19-11-2026</th></tr><tr><td>USD</td><td>136.9634</td><td>136.9455</td></tr><tr><td><b>EUR</b></td><td>${value}</td><td>150.4484</td></tr></table>`;

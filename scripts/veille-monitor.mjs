@@ -3,9 +3,9 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
-const base = dirname(fileURLToPath(import.meta.url));
-const sourcesFile = process.env.SAHRA_SOURCES || join(base, "veille-sources.json");
-const stateFile = process.env.SAHRA_STATE || join(base, "veille-state.json");
+const base = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
+const sourcesFile = process.env.SAHRA_SOURCES || join(base, "..", "donnees", "veille-sources.json");
+const stateFile = process.env.SAHRA_STATE || join(base, "..", "donnees", "veille-state.json");
 const outputFile = process.env.SAHRA_OUTPUT || join(base, "veille-data.js");
 const reportFile = process.env.SAHRA_REPORT || join(base, "veille-report.json");
 const sources = JSON.parse(await readFile(sourcesFile, "utf8"));

@@ -5,7 +5,8 @@ import { promisify } from "node:util";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const base = dirname(fileURLToPath(import.meta.url));
+const project = dirname(fileURLToPath(import.meta.url));
+const base = join(project, "site");
 const files = new Map([
   ["/", ["Sahra.html", "text/html; charset=utf-8"]],
   ["/Sahra.html", ["Sahra.html", "text/html; charset=utf-8"]],
@@ -28,9 +29,9 @@ const sendJson = (response, status, data) => {
 };
 
 export function createSahraHandler({ baseDir = base, collect = () => Promise.allSettled([
-  run(process.execPath, [join(baseDir, "veille-monitor.mjs")], { cwd: baseDir, timeout: 300000 }),
-  run(process.execPath, [join(baseDir, "flux-monitor.mjs")], { cwd: baseDir, timeout: 90000 }),
-  run(process.execPath, [join(baseDir, "taux-monitor.mjs")], { cwd: baseDir, timeout: 30000 }),
+  run(process.execPath, [join(project, "scripts", "veille-monitor.mjs")], { cwd: baseDir, timeout: 300000 }),
+  run(process.execPath, [join(project, "scripts", "flux-monitor.mjs")], { cwd: baseDir, timeout: 90000 }),
+  run(process.execPath, [join(project, "scripts", "taux-monitor.mjs")], { cwd: baseDir, timeout: 30000 }),
 ]) } = {}) {
   let running = null;
   return async (request, response) => {
