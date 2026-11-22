@@ -15,6 +15,7 @@ const topicQueries = {
 const socialUrls = [
   "https://mastodon.social/api/v1/timelines/tag/Djanet?limit=40",
   "https://mastodon.social/api/v1/timelines/tag/Algerie?limit=40",
+  "https://mastodon.social/api/v1/timelines/tag/Egypt?limit=40",
 ];
 const decode = (text) => String(text || "")
   .replace(/<!\[CDATA\[([^]*?)\]\]>/g, "$1")
