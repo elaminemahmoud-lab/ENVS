@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T07:02:10.219Z",
+  "checkedAt": "2026-11-22T07:31:33.464Z",
   "media": {
     "status": "ok",
     "items": [
@@ -124,7 +124,7 @@
           "source": "Algerie360",
           "publisherUrl": "https://www.algerie360.com/",
           "date": "2026-08-30T07:00:00.000Z",
-          "isNew": true
+          "isNew": false
         }
       ]
     }
