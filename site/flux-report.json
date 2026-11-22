@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T15:27:07.221Z",
+  "checkedAt": "2026-11-22T21:53:26.911Z",
   "media": {
     "status": "ok",
     "items": [
@@ -9,7 +9,7 @@
         "source": "Voyagerdz",
         "publisherUrl": "https://voyagerdz.com/",
         "date": "2026-11-22T08:58:51.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Tourisme en Algérie : des opportunités d’investissement présentées à la diaspora - Diasporas",
@@ -26,6 +26,14 @@
         "publisherUrl": "https://www.visa-algerie.com/",
         "date": "2026-11-19T16:33:34.000Z",
         "isNew": false
+      },
+      {
+        "title": "Tunisie : les critiques se multiplient à l’égard des touristes algériens - TSA - Tout Sur l'Algérie",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQck9BZVcyT2NFV0ZVTk9FNDg3ZWZqa0NkTUJ5bVlwWU96U2g3R3RRODNaa2tjSjJjY3hZTHExY1ZmYlFPWXBzbG1nbTBMUUhvampOS1BMRHhLdlZXcDJtVncxT2xkODI5LUpHeGRySE9qY3ZiVVNCcXhNSVNCRGNkcnVLM3JJMzFNWnFVai1KUVlLN3I5OHBsOE9tWjBwN0k?oc=5",
+        "source": "TSA - Tout Sur l'Algérie",
+        "publisherUrl": "https://www.tsa-algerie.com/",
+        "date": "2026-11-18T07:40:38.000Z",
+        "isNew": true
       },
       {
         "title": "Tourisme : l’Algérie mise sur l’expertise italienne pour promouvoir la destination à l’international - Visas & Voyages Algérie",
@@ -133,14 +141,6 @@
     "societale": {
       "status": "ok",
       "items": [
-        {
-          "title": "Voyage en 2026 : 55 destinations sans visa pour le passeport algérien, le guide essentiel - Voyagerdz",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ3dTbzR3YjRXSF96RC1XaUpBb0dGeEhWWGhFR3BaY1BxZTA0RTYzVG5IUUJMRDJXcUdIcFczLS1xY0kzZTc0ZXF5WUpQWEl3cklZcWFrMkdjNHR4dVo3TWRjZGJmQVdjN2lQcFBVYkFzOEYtV0xmMktTVHpMUmRxYW11OHhuQXZQOEpvczFkU2ZKeE5kNUZFRFhFVFFMSTl5NHM0Vkk5cm9jU2I3Mnc?oc=5",
-          "source": "Voyagerdz",
-          "publisherUrl": "https://voyagerdz.com/",
-          "date": "2026-10-24T07:00:00.000Z",
-          "isNew": false
-        },
         {
           "title": "Aéroport d’Alger : il voyageait avec un passeport diplomatique volé et un faux visa - Visas & Voyages Algérie",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQUFjYTBxMUVORlNoRi1wR21nX0R5Q1pxdEtxTDFmdzRyaXNlT1p2anEwRWxGMWNjVl9EdTVEZGFzRlRxT0NCdjUyMDF6QS11SG0wVWUxX1dzaURXN0dnUjhVeGplanBIaGljRzc3U1VMeDQweDEyNTdqMEMwMzVJdFM3R0VSUDl5ZGFvdTIxRDNSU1JjNEhOQzcycHlkcUR0Y3B3SzgxZ01xZ2Rxb3hv?oc=5",
