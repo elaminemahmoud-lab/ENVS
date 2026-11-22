@@ -249,13 +249,11 @@ function openTrip(id) {
 document.querySelector("#form").addEventListener("submit", (e) => {
   e.preventDefault();
   let p = document.querySelector("#place").value,
-    ty = document.querySelector("#type").value,
     b = +document.querySelector("#budget").value,
     d = +document.querySelector("#days").value;
   let result = trips.filter(
     (t) =>
       (!p || t.place === p) &&
-      (!ty || t.type === ty) &&
       (!b || dzd(t.price) <= b) &&
       (!d || t.days <= d),
   );
