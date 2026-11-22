@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T14:17:33.060Z",
+  "checkedAt": "2026-11-22T15:01:26.336Z",
   "media": {
     "status": "ok",
     "items": [
@@ -47,7 +47,22 @@
   },
   "social": {
     "status": "ok",
-    "items": []
+    "items": [
+      {
+        "title": "MENA Highlights - 19 Nov. ‘26 - Zuhur News #372 on # Syria # Gaza # Algeria -#Niger # Kuwait # Iran # WesternSahara -#Morocco # Egypt # Russia # Sudan # Yemen # SaudiArabia # Bahrain # Iraq # Weapons # UN please do subscribe! # press https:",
+        "url": "https://sfba.social/@Sherifazuhur/117643416829117736",
+        "source": "Sherifa Zuhur",
+        "date": "2026-11-19T13:48:01.000Z",
+        "isNew": false
+      },
+      {
+        "title": "Egypt secures $2.3 Billion IMF deal as economic recovery gains momentum http:// newsfeed.facilit8.network/TWNy MC # Egypt # IMFDeal # EconomicRecovery # GDPGrowth # Tourism",
+        "url": "https://journa.host/@africa/117642489916247045",
+        "source": "Headlines Africa",
+        "date": "2026-11-19T09:52:18.000Z",
+        "isNew": false
+      }
+    ]
   },
   "topics": {
     "technologie": {
@@ -108,7 +123,7 @@
       ]
     },
     "societale": {
-      "status": "ok",
+      "status": "error",
       "items": [
         {
           "title": "Voyage en 2026 : 55 destinations sans visa pour le passeport algérien, le guide essentiel - Voyagerdz",
