@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { selectNews } from "./flux-filters.mjs";
+import { selectNews, selectSocial } from "./flux-filters.mjs";
 
 const base = dirname(fileURLToPath(import.meta.url));
 const reportFile = process.env.SAHRA_FLUX_REPORT || join(base, "flux-report.json");
@@ -53,7 +53,7 @@ try { previous = JSON.parse(await readFile(reportFile, "utf8")); }
 catch (error) { if (error.code !== "ENOENT") throw error; }
 const seenMedia = new Set((previous.media?.items || []).map((item) => item.url));
 const seenSocial = new Set((previous.social?.items || []).map((item) => item.url));
-const report = { checkedAt: new Date().toISOString(), media: { status: "error", items: selectNews(previous.media?.items || []) }, social: { status: "error", items: previous.social?.items || [] }, topics: {} };
+const report = { checkedAt: new Date().toISOString(), media: { status: "error", items: selectNews(previous.media?.items || []) }, social: { status: "error", items: selectSocial(previous.social?.items || []) }, topics: {} };
 
 try {
   const xml = await (await get(mediaUrl, "application/rss+xml, application/xml" )).text();
@@ -77,17 +77,17 @@ for (const [key, query] of Object.entries(topicQueries)) {
 }
 
 try {
-  const posts = (await Promise.all(socialUrls.map(async (url) => (await get(url, "application/json")).json()))).flat();
-  if (!Array.isArray(posts)) throw Error("Réponse inattendue");
-  const items = posts.map((post) => ({
+  const posts = (await Promise.all(socialUrls.map(async (url) => {
+    const posts = await (await get(url, "application/json")).json();
+    if (!Array.isArray(posts)) throw Error("Réponse inattendue");
+    return posts;
+  }))).flat();
+  const items = selectSocial(posts.map((post) => ({
     title: decode(post.content).slice(0, 240),
     url: validUrl(post.url),
     source: post.account?.display_name || post.account?.acct || "Mastodon",
     date: post.created_at,
-  })).filter((item) => item.url && /touris|voyag|sahara|djanet|timimoun|tassili/i.test(item.title)
-    && Date.now() - new Date(item.date).getTime() < 90 * 24 * 60 * 60 * 1000)
-    .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
-    .sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 8);
+  })));
   report.social = { status: "ok", items: items.map((item) => ({ ...item, isNew: !seenSocial.has(item.url) && seenSocial.size > 0 })) };
 } catch (error) { console.warn(`Réseaux sociaux : ${error.message}`); }
 

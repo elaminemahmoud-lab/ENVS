@@ -33,3 +33,18 @@ export function selectNews(items, topic = 'media', now = Date.now()) {
   }).sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
     .slice(0, topic === 'media' ? 8 : 6);
 }
+
+// Même sélection après une collecte et lors de la reprise du dernier rapport.
+export function selectSocial(items, now = Date.now()) {
+  const seen = new Set();
+  return items.filter((item) => {
+    try { if (new URL(item.url).protocol !== 'https:') return false; }
+    catch { return false; }
+    const age = now - Date.parse(item.date);
+    if (!Number.isFinite(age) || age < 0 || age > 90 * 86400000) return false;
+    if (!/touris|voyag|sahara|djanet|timimoun|tassili/i.test(item.title)) return false;
+    if (seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  }).sort((a, b) => Date.parse(b.date) - Date.parse(a.date)).slice(0, 8);
+}

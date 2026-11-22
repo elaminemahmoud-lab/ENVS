@@ -64,3 +64,28 @@ test('format CSV en mémoire : domaines, dates, accents, séparateurs et formule
   assert.ok(csv.includes('"\'=TEST"'));
   assert.equal(csv.split('\r\n').length, 3);
 });
+
+test('veille sans rapport initial et échec HTTP du contrôle : affiche une erreur sans perdre le rapport', async () => {
+  const elements = new Map();
+  const node = (id) => {
+    if (!elements.has(id)) elements.set(id, { innerHTML: '', textContent: '', hidden: true, disabled: false,
+      handlers: {}, addEventListener(event, fn) { this.handlers[event] = fn; },
+    });
+    return elements.get(id);
+  };
+  const report = { checkedAt: '2026-11-21T19:00:00Z', sources: [], changes: [] };
+  const context = vm.createContext({ window: {}, Intl, URL, location: { protocol: 'http:' },
+    document: { querySelector: node, addEventListener() {} }, setInterval() {},
+    fetch: async (_, options) => options?.method === 'POST'
+      ? { ok: false, status: 503, json: async () => ({ error: 'indisponible' }) }
+      : { ok: false },
+  });
+  vm.runInContext(await readFile(new URL('./veille.js', import.meta.url), 'utf8'), context);
+  assert.match(node('#veilleStatus').textContent, /premier contrôle/);
+  context.window.sahraVeille = report;
+  vm.runInContext('renderVeille(window.sahraVeille)', context);
+  await node('#veilleRefresh').handlers.click();
+  assert.equal(context.window.currentVeille, report);
+  assert.match(node('#veilleStatus').textContent, /échoué/);
+  assert.equal(node('#veilleRefresh').disabled, false);
+});

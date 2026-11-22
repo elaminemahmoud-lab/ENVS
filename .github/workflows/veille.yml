@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: "24"
       - name: Vérifier le moniteur
-        run: node --test veille-monitor.test.mjs flux-filters.test.mjs site.test.mjs taux-monitor.test.mjs
+        run: node --test veille-monitor.test.mjs flux-filters.test.mjs flux-monitor.test.mjs site.test.mjs serveur.test.mjs taux-monitor.test.mjs
       - name: Actualiser le taux EUR/DZD
         id: taux
         continue-on-error: true

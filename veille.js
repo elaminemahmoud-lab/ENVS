@@ -34,7 +34,7 @@ function renderVeille(report) {
   document.querySelector("#veilleResults").innerHTML = cards(sources.filter((source) => source.group === "agences"));
   document.querySelector("#concurrenceResults").innerHTML = cards(sources.filter((source) => source.group === "concurrence"));
   document.querySelector("#referenceResults").innerHTML = cards(sources.filter((source) => ["technologie", "societale"].includes(source.group)));
-  const recentChanges = (report.changes || []).slice(0, 5);
+  const recentChanges = (report?.changes || []).slice(0, 5);
   document.querySelector("#veilleChanges").innerHTML = recentChanges.length
     ? `<h3>Changements récents</h3><ul>${recentChanges.map((change) => `<li><a href="${escapeHtml(safeUrl(change.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(change.name)}</a> · ${escapeHtml(new Intl.DateTimeFormat("fr-DZ", { timeZone: "Africa/Algiers", dateStyle: "medium" }).format(new Date(change.at)))}</li>`).join("")}</ul>`
     : "";
@@ -67,6 +67,7 @@ if (location.protocol === "http:" || location.protocol === "https:") {
     veilleStatus.textContent = "Contrôle des sources en cours…";
     try {
       const response = await fetch("/api/veille", { method: "POST" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const report = await response.json();
       renderVeille(report);
       const fluxResponse = await fetch("/api/flux");
