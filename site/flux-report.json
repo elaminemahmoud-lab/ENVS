@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-11-22T13:57:51.907Z",
+  "checkedAt": "2026-11-22T14:17:33.060Z",
   "media": {
-    "status": "error",
+    "status": "ok",
     "items": [
       {
         "title": "Tourisme en Algérie : des opportunités d’investissement présentées à la diaspora - Diasporas",
@@ -51,11 +51,11 @@
   },
   "topics": {
     "technologie": {
-      "status": "error",
+      "status": "ok",
       "items": []
     },
     "commerciale": {
-      "status": "error",
+      "status": "ok",
       "items": [
         {
           "title": "Nouvelair Black Friday : -30 % sur tous les vols, dont l’Algérie et la France - Visas & Voyages Algérie",
@@ -108,22 +108,22 @@
       ]
     },
     "societale": {
-      "status": "error",
+      "status": "ok",
       "items": [
+        {
+          "title": "Voyage en 2026 : 55 destinations sans visa pour le passeport algérien, le guide essentiel - Voyagerdz",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ3dTbzR3YjRXSF96RC1XaUpBb0dGeEhWWGhFR3BaY1BxZTA0RTYzVG5IUUJMRDJXcUdIcFczLS1xY0kzZTc0ZXF5WUpQWEl3cklZcWFrMkdjNHR4dVo3TWRjZGJmQVdjN2lQcFBVYkFzOEYtV0xmMktTVHpMUmRxYW11OHhuQXZQOEpvczFkU2ZKeE5kNUZFRFhFVFFMSTl5NHM0Vkk5cm9jU2I3Mnc?oc=5",
+          "source": "Voyagerdz",
+          "publisherUrl": "https://voyagerdz.com/",
+          "date": "2026-10-24T07:00:00.000Z",
+          "isNew": true
+        },
         {
           "title": "Aéroport d’Alger : il voyageait avec un passeport diplomatique volé et un faux visa - Visas & Voyages Algérie",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQUFjYTBxMUVORlNoRi1wR21nX0R5Q1pxdEtxTDFmdzRyaXNlT1p2anEwRWxGMWNjVl9EdTVEZGFzRlRxT0NCdjUyMDF6QS11SG0wVWUxX1dzaURXN0dnUjhVeGplanBIaGljRzc3U1VMeDQweDEyNTdqMEMwMzVJdFM3R0VSUDl5ZGFvdTIxRDNSU1JjNEhOQzcycHlkcUR0Y3B3SzgxZ01xZ2Rxb3hv?oc=5",
           "source": "Visas & Voyages Algérie",
           "publisherUrl": "https://www.visa-algerie.com/",
           "date": "2026-09-12T07:00:00.000Z",
-          "isNew": false
-        },
-        {
-          "title": "Envie de voyager en septembre ? 5 destinations accessibles sans visa avec un passeport algérien - Algerie360",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdHp5YjNtV1MybjZZU1pqLWEzMFB1WnNzdU53M3VlY2d2ZjVITjdoNkp1OF9JcUxlcklvcktrRGh2MnlRcDM1UG5DVFczdnl6VFhJZ0JJTHdoazhYZnFqS2Mwd1ZOUTEyRmx3ZXprRF9sVVhHb25idjRHMmVMZmJNSg?oc=5",
-          "source": "Algerie360",
-          "publisherUrl": "https://www.algerie360.com/",
-          "date": "2026-08-30T07:00:00.000Z",
           "isNew": false
         }
       ]
