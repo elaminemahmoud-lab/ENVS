@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T07:51:11.556Z",
+  "checkedAt": "2026-11-22T09:17:31.179Z",
   "sources": [
     {
       "name": "Ziguade Travel",
@@ -83,7 +83,7 @@
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
       "kind": "Innovation",
       "group": "technologie",
-      "status": "unchanged"
+      "status": "changed"
     },
     {
       "name": "France Diplomatie · Entrée en Algérie",
@@ -101,6 +101,16 @@
     }
   ],
   "changes": [
+    {
+      "name": "APS · Innovation touristique",
+      "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
+      "at": "2026-11-22T09:17:31.179Z"
+    },
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-22T09:17:31.179Z"
+    },
     {
       "name": "TourRadar · Algérie",
       "url": "https://www.tourradar.com/d/algeria",
@@ -239,16 +249,6 @@
     {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
-      "at": "2026-11-21T18:07:14.657Z"
-    },
-    {
-      "name": "Terres d’Aventure · Algérie",
-      "url": "https://www.terdav.com/ps-algerie/tp-circuit-accompagne",
-      "at": "2026-11-21T18:07:14.657Z"
-    },
-    {
-      "name": "Nomade Aventure · Algérie",
-      "url": "https://www.nomade-aventure.com/voyage-algerie",
       "at": "2026-11-21T18:07:14.657Z"
     }
   ]

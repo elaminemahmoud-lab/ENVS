@@ -2,62 +2,72 @@
   "pages": {
     "https://ziguadetravel.com/": {
       "hash": "4f76c285cd7bebfb6b2e7b1356d58471c2ff91d7ba2bafa39ef5f46f9ea603e7",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.algerie-tours.com/nos-circuits/": {
       "hash": "325b335bd4d9e85286d77a0a6b4272bb94382623495f99c043ae0e52f70f35cf",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://essendilene-voyages.com/Essendilene/accueilfr.html": {
       "hash": "c823cd2f517b54be54a7681351377633a5f302adcfb42d36af970b479b9c335a",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://fellaoucentour.dz/": {
       "hash": "f73699883836b870536f3c7a7adc44cfbc687950dfa50d9a17cb4fd59f7f413a",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://kabylie-voyage.com/contact/": {
       "hash": "14c4232453c68f91a2967896786cf0bf7604c4cb46d451beb2193581c3544ed8",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.tourradar.com/d/algeria": {
-      "hash": "38bc847b57e19a88b16f980a720804b3961eb97156984182c0fa33171b25fe06",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "hash": "905ef42f70ab361eaf89816c17c669f59f298d7a8cd32d29926ab05550464b6d",
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.nomade-aventure.com/voyage-algerie": {
       "hash": "7634f1624d85c1de84dcd69d8e98d7a028fbe15419dd0a4ad7e9188d2923c8b4",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.terdav.com/ps-algerie/tp-circuit-accompagne": {
       "hash": "4542efaae6ca4ffe158d9a5a1a79215b468cf7aa58ce08732a28676593d034d0",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes": {
-      "hash": "a4a5a4215ab29569fc3eea93efa408e36980ee16f42bc91c7a3032af5b3d90cb",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "hash": "205b09181779f0fa1916bd2210e5962beda614219075d601f14b4d8e846b2fc6",
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-entree-sejour": {
       "hash": "023a114ec54d4e3d8f727469b35feed6197dfa192d40349c709b57fa66079cdc",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-securite": {
       "hash": "d5986c216ff0c04f1b714812a734f5cf4dce5e1aef078b376e28b99f1206587d",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.algerie-tours.com/circuit-culturel-oran-et-alger/": {
       "hash": "74111f298f93f109c881a2516a5ee4c8f4784de722c9ee3ab8b5811e59bb8803",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://www.algerie-tours.com/circuit-aures-et-oasis-dalgerie/": {
       "hash": "ac3dbf662df40ccf2f9008442b2e40dccb66cfdec042b8b60888295e0c5a06d7",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     },
     "https://mzabtours.net/": {
       "hash": "91914edf6b29205419cbe22f829580afad2e89270d137766624129de0475af6c",
-      "checkedAt": "2026-11-22T07:51:11.556Z"
+      "checkedAt": "2026-11-22T09:17:31.179Z"
     }
   },
   "changes": [
+    {
+      "name": "APS · Innovation touristique",
+      "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
+      "at": "2026-11-22T09:17:31.179Z"
+    },
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-22T09:17:31.179Z"
+    },
     {
       "name": "TourRadar · Algérie",
       "url": "https://www.tourradar.com/d/algeria",
@@ -196,16 +206,6 @@
     {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
-      "at": "2026-11-21T18:07:14.657Z"
-    },
-    {
-      "name": "Terres d’Aventure · Algérie",
-      "url": "https://www.terdav.com/ps-algerie/tp-circuit-accompagne",
-      "at": "2026-11-21T18:07:14.657Z"
-    },
-    {
-      "name": "Nomade Aventure · Algérie",
-      "url": "https://www.nomade-aventure.com/voyage-algerie",
       "at": "2026-11-21T18:07:14.657Z"
     }
   ]
