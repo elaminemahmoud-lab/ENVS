@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T15:03:33.723Z",
+  "checkedAt": "2026-11-22T15:26:49.894Z",
   "sources": [
     {
       "name": "Ziguade Travel",
@@ -101,6 +101,11 @@
     }
   ],
   "changes": [
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-22T15:26:49.894Z"
+    },
     {
       "name": "TourRadar · Algérie",
       "url": "https://www.tourradar.com/d/algeria",
@@ -244,11 +249,6 @@
     {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
-      "at": "2026-11-21T19:37:10.368Z"
-    },
-    {
-      "name": "TourRadar · Algérie",
-      "url": "https://www.tourradar.com/d/algeria",
       "at": "2026-11-21T19:37:10.368Z"
     }
   ]
