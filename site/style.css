@@ -45,6 +45,10 @@ a {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--cream);
   height: 76px;
   display: flex;
   align-items: center;
@@ -745,4 +749,9 @@ dialog::backdrop {
   footer {
     display: block;
   }
+}
+
+/* Garde les titres visibles sous la navigation après un clic sur une ancre. */
+html {
+  scroll-padding-top: 96px;
 }
