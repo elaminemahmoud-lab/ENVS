@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-22T15:01:26.336Z",
+  "checkedAt": "2026-11-22T15:03:45.780Z",
   "media": {
     "status": "ok",
     "items": [
@@ -123,7 +123,7 @@
       ]
     },
     "societale": {
-      "status": "error",
+      "status": "ok",
       "items": [
         {
           "title": "Voyage en 2026 : 55 destinations sans visa pour le passeport algérien, le guide essentiel - Voyagerdz",
@@ -131,7 +131,7 @@
           "source": "Voyagerdz",
           "publisherUrl": "https://voyagerdz.com/",
           "date": "2026-10-24T07:00:00.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Aéroport d’Alger : il voyageait avec un passeport diplomatique volé et un faux visa - Visas & Voyages Algérie",
