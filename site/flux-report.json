@@ -1,8 +1,24 @@
 {
-  "checkedAt": "2026-11-23T13:05:16.903Z",
+  "checkedAt": "2026-11-24T01:00:24.379Z",
   "media": {
     "status": "ok",
     "items": [
+      {
+        "title": "Béjaia : un appel d’offres destiné aux agences de voyages - Voyagerdz",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yeGFJVzNtbjc3ZlNRRTVjc0ZVdnRwM3pBOTRBczFuTFcwWXd6OXI5ZmNfdmFIbUEtU3kxUEdBcnhIWWk5cEhKOXBtYnYxM0ZFVUk2SkR1cWVhT3QySDF2cXUxVWdyY093NXFaNkZ5a0c?oc=5",
+        "source": "Voyagerdz",
+        "publisherUrl": "https://voyagerdz.com/",
+        "date": "2026-11-23T14:59:24.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Investissement touristique en Algérie : la diaspora sollicitée - Voyagerdz",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE81MnNPUjE3eWpfZWgzVFhlWlR2a2Nta3RyWjQ2UGRtZzlNVHJMNFlnWUZELWFmWmNCb0REVG1SYURmT25iTF8xSUtRdjI2MVJhcUZzelZDSnI4aHlPclhvdmhLWFF3cXhFRjBweTBjRG9tWWRPbjA2bg?oc=5",
+        "source": "Voyagerdz",
+        "publisherUrl": "https://voyagerdz.com/",
+        "date": "2026-11-22T08:58:51.000Z",
+        "isNew": true
+      },
       {
         "title": "Tourisme en Algérie : des opportunités d’investissement présentées à la diaspora - Diasporas",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd3JCR1ktOC14cXdNdlQwTTNNejBGNFU3RkdDTmlGOHpLZTV5aUhoNWRSVi1ZMTVkaHVVSG5HRjZwUmh6djFCWUxaS1FwZUNTSVpRenZNNDExYkxja2VabGlQai1RcHpCRk9WaGxjWG1UOUY5RUN2TVV5Umh3MzJQYVd4MU1LdWJlYll1QXFGTENWUW1SZ3lraVJQN2hQWmFPTW9nOUlJdlRhMGxvenQ3SjBB?oc=5",
@@ -12,27 +28,19 @@
         "isNew": false
       },
       {
-        "title": "La formation des professionnels du tourisme figure parmi les priorités de la Stratégie nationale de développement du secteur | Algérie Presse Service - وكالة الأنباء الجزائرية",
-        "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQRDJZMTZXRThzZFFuWk1iNDBvLW1YcG1qVE9FR3BWQ0VyNTBLVXRpNmRFOExCb2YtdkhNeEY3bFRyUUVwQklyRlBBOVItclFzM2tBbVRURDVyQTlYTERsNDRJNEZhVmpWVjZJeFlMYUduMEF6YnM5WGlzSGtaNkxoN3puaUEyMlhabFRqVExyVVY5S3dUeloyeFRyUi1Ddy1jakRPTGZqRjE2bm5kMVhkUkl4NUJ6aGt0TC1rZE10QWhTMzkzR3FmNUtUNXhtb1Qza1FNRnB5aEV0R3k4eV9oeW1rVDd5Z01TY1lHVzlqd0FuSzRaNVNRS091ay1NR2hRVzFyZ3c3emx3TGpRbkM2Y0llcndnenc?oc=5",
-        "source": "وكالة الأنباء الجزائرية",
-        "publisherUrl": "https://www.aps.dz/",
-        "date": "2026-10-27T07:00:00.000Z",
+        "title": "Tourisme : l’Algérie mise sur l’expertise italienne pour promouvoir la destination à l’international - Visas & Voyages Algérie",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVmx1VUFYbGpmWlhmRnhDNjNPZkdjelY4dURZNEhQbkh2bDBFaTB2ci1kbERQREZHOThwS1o4YWczb1I5SWg3S0U2dEhMeHFKdDFLOUg4N1dIRXJKNUNSLWxQOEhNTHRhNHFPTzJYMUNaNnpaSnNUOGFrYTdCMFpwNVlfdmVnSDlFRnBoN2Z5a05oTkVhM0NKNWp3UFBCeXNUSUZPSXVraHhoX01kZFlVcGR6VnN4V1VKal9QZDVDZ0l3QWM?oc=5",
+        "source": "Visas & Voyages Algérie",
+        "publisherUrl": "https://www.visa-algerie.com/",
+        "date": "2026-10-05T07:00:00.000Z",
         "isNew": true
       },
       {
-        "title": "Tourisme thermal en Algérie : les stations et les bains traditionnels ont attiré plus de 3,1 millions de curistes et de visiteurs en 2025 - Algerie Eco",
-        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQTHltUkxIYU1DV1EwWm5kMEpGQUFwSjBGN1BTTlJRMmd3dkVXUlBVbWt3a0RYM3pLcktrRWRDWW9vVnZsbDZaaTY3dzRLSF9EU1VOYVgySHpNMVliUTQtd1d4SjAtV195MTdOdGhiNmN2eGJSWWx2QW1oVHRmTjFFR0FxakNQb1M4b2JHZmdVckQzSFY2Vlh1RGg3bkRPZzB1NzRoOHRPc2NtVTNvUDhsWnRRRGJqOVhoUURIcC0zQlJaVEhBbDhCanBhWWxBdlkxeHMyUy03bWhLX2RwTGhuclE2MUZqaTl1YVZHY2lRWEFFYnQyN05kOVZhcmRCeFE?oc=5",
-        "source": "Algerie Eco",
-        "publisherUrl": "https://algerie-eco.com/",
-        "date": "2026-10-26T07:00:00.000Z",
-        "isNew": true
-      },
-      {
-        "title": "Tourisme et diaspora : pourquoi l’Algérie engrange moins de devises que la Tunisie - TSA - Tout Sur l'Algérie",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMlFSaFdmZm5MOEdIdy1VQVVNMmt3YzVEb2o3akpDa0ZBXzFoZkxmT2o5clZjaUo0OGQ4UzVaVjlPNkRrcUFZVERDUVVBRVFjVmZLcDJ0eDZBeEhGSmZPQ18zSVBmeXE3N212Vm96eTJaM0VvUWVhMDVPNUYxdUNKQWw0OFY1enU4YkpUajVxLVJnYk1NU1BYZ1lVQ3FfdmhHeGRDUHJtaDRiY0dI?oc=5",
-        "source": "TSA - Tout Sur l'Algérie",
-        "publisherUrl": "https://www.tsa-algerie.com/",
-        "date": "2026-10-06T07:00:00.000Z",
+        "title": "Classement mondial du tourisme : quelle place pour l’Algérie ? - Voyagerdz",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1UR01Ra0xNN3FEVlpiT3FqeDBTcVU2VlU1akFpQlRqN1VIN19MVHl0VHdEVkc0eWI2bmZxdUhrbVB0S0tZOUdHYnRlYndlcGxMaXR4anJxVllTVG5HZWMtc3lXVFZtMHBMc0ZFVWNDc3Z0a3pOUzBVXzZtbU5Gdw?oc=5",
+        "source": "Voyagerdz",
+        "publisherUrl": "https://voyagerdz.com/",
+        "date": "2026-10-02T07:00:00.000Z",
         "isNew": true
       },
       {
@@ -81,6 +89,14 @@
           "isNew": false
         },
         {
+          "title": "Air Algérie relance une ligne internationale, avec une promotion - Visas & Voyages Algérie",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbmtWRnQyeVpHbE1vdVRURTVSUXFQamw0aktSNEd3dXRURlMzX0pXNU5WajNXNzJkQlhoWHRIM3phaUNoWlNuY1JDYU02R043Sk1tX2tTcU5OQTdSakxEYmhRWDlHZExsZkl2RHdyazBNcEhuMTVEVzFuX3FvREhibjA4NGh3Q193NDYwTTl1enktSnd5TVRRQg?oc=5",
+          "source": "Visas & Voyages Algérie",
+          "publisherUrl": "https://www.visa-algerie.com/",
+          "date": "2026-11-11T08:00:00.000Z",
+          "isNew": true
+        },
+        {
           "title": "Air Algérie lance une nouvelle promotion : Istanbul, Marseille, Genève… 11 destinations à prix réduits - Algerie360",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPc05MczA0RmxnMDBsWGhBSEZwUUVrY1JxU1dhdUhRYmhsazkxcEhaeTc1Z3lCalJwb28tWVNOTFFISlM2dnVWdGcxc2RYb2NEWUlHbU1qRVVDWHdacFNuNlJjTFMwbUtyVS1ORTBNODhPSDdFdWFmWW04V0RkNGZlaUM3WHc?oc=5",
           "source": "Algerie360",
@@ -95,14 +111,6 @@
           "publisherUrl": "https://voyagerdz.com/",
           "date": "2026-10-19T07:00:00.000Z",
           "isNew": false
-        },
-        {
-          "title": "Air Algérie lance une vaste promotion : des billets dès 148 euros - Voyagerdz",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5mWHdaVmtUNk5HRUdYNGNVMlJCY2hHckwteTl6RmlISE04TU50N0xhRWY0LTRYZjRIVHYwbUsxcHpGWEVwdVlweGxCYzlmdF9qR2hpdDdGdU9lZlJTdE1yWjFyVkJFNThYREJRdFNTVVBTSXVXVTItTWZ1bGk?oc=5",
-          "source": "Voyagerdz",
-          "publisherUrl": "https://voyagerdz.com/",
-          "date": "2026-10-08T07:00:00.000Z",
-          "isNew": true
         },
         {
           "title": "Air Algérie casse les prix : 8 destinations internationales à partir de 19 841 DA - Algerie360",
@@ -126,20 +134,12 @@
       "status": "ok",
       "items": [
         {
-          "title": "Passeport algérien : ce pays Schengen rend les visas touristiques presque impossibles - Visas & Voyages Algérie",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOelowLWNfZHVVUURIblRFcTZ3dUQ0SGxrTElkTUExVG1ZOFR0bVNFWTY2cXJkbHJJZkdVaG1KTXZBNWV1ekUxOXQwQTF1NUpnUEc0RnVPZHJEOUJFaVJsNERnMjBGdHAtNWVJZGg1RUFMbDFVQWlxV2xQendyNHVIYmhLZHhDS0dJVjV1UUVaY3hsekJlZHpWNXlaNWVXVG41WVN2STQzZEVBWi1yRTNQVHRPOA?oc=5",
-          "source": "Visas & Voyages Algérie",
-          "publisherUrl": "https://www.visa-algerie.com/",
-          "date": "2026-11-04T09:47:46.000Z",
-          "isNew": true
-        },
-        {
           "title": "Visa à l’arrivée à Djanet : les 5 étapes et les tarifs pour visiter le Sahara algérien - Algerie360",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mZkxCU25YU1hqNERJRUtwSWF2d0dfc2hBRldlNG93Sjc3WDFFT0NISHBIbkxYODBiUVd4Q3hXMDZBVmJPc0pEWnplSDJEYkFjVXlFRzVFUGR4a0xLbDgwVmw5WmVTNVE?oc=5",
           "source": "Algerie360",
           "publisherUrl": "https://www.algerie360.com/",
           "date": "2026-10-20T07:00:00.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Aéroport d’Alger : il voyageait avec un passeport diplomatique volé et un faux visa - Visas & Voyages Algérie",
