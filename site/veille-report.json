@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-24T11:04:23.924Z",
+  "checkedAt": "2026-11-24T21:21:13.567Z",
   "sources": [
     {
       "name": "Ziguade Travel",
@@ -13,21 +13,21 @@
       "url": "https://www.algerie-tours.com/nos-circuits/",
       "kind": "Circuits",
       "group": "agences",
-      "status": "changed"
+      "status": "unchanged"
     },
     {
       "name": "Algérie Tours · Oran et Alger",
       "url": "https://www.algerie-tours.com/circuit-culturel-oran-et-alger/",
       "kind": "Circuit",
       "group": "agences",
-      "status": "changed"
+      "status": "unchanged"
     },
     {
       "name": "Algérie Tours · Aurès et oasis",
       "url": "https://www.algerie-tours.com/circuit-aures-et-oasis-dalgerie/",
       "kind": "Circuit",
       "group": "agences",
-      "status": "changed"
+      "status": "unchanged"
     },
     {
       "name": "Essendilène Voyages",
@@ -101,6 +101,21 @@
     }
   ],
   "changes": [
+    {
+      "name": "APS · Innovation touristique",
+      "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
+      "at": "2026-11-24T21:21:13.567Z"
+    },
+    {
+      "name": "Nomade Aventure · Algérie",
+      "url": "https://www.nomade-aventure.com/voyage-algerie",
+      "at": "2026-11-24T21:21:13.567Z"
+    },
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-24T21:21:13.567Z"
+    },
     {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
@@ -235,21 +250,6 @@
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
       "at": "2026-11-22T14:17:19.116Z"
-    },
-    {
-      "name": "TourRadar · Algérie",
-      "url": "https://www.tourradar.com/d/algeria",
-      "at": "2026-11-22T14:17:19.116Z"
-    },
-    {
-      "name": "APS · Innovation touristique",
-      "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
-      "at": "2026-11-22T13:57:39.893Z"
-    },
-    {
-      "name": "TourRadar · Algérie",
-      "url": "https://www.tourradar.com/d/algeria",
-      "at": "2026-11-22T13:57:39.893Z"
     }
   ]
 }
