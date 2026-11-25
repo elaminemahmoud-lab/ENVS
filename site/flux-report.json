@@ -1,23 +1,15 @@
 {
-  "checkedAt": "2026-11-24T21:21:44.274Z",
+  "checkedAt": "2026-11-25T04:21:31.767Z",
   "media": {
     "status": "ok",
     "items": [
-      {
-        "title": "Béjaia : un appel d’offres destiné aux agences de voyages - Voyagerdz",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yeGFJVzNtbjc3ZlNRRTVjc0ZVdnRwM3pBOTRBczFuTFcwWXd6OXI5ZmNfdmFIbUEtU3kxUEdBcnhIWWk5cEhKOXBtYnYxM0ZFVUk2SkR1cWVhT3QySDF2cXUxVWdyY093NXFaNkZ5a0c?oc=5",
-        "source": "Voyagerdz",
-        "publisherUrl": "https://voyagerdz.com/",
-        "date": "2026-11-23T14:59:24.000Z",
-        "isNew": true
-      },
       {
         "title": "Investissement touristique en Algérie : la diaspora sollicitée - Voyagerdz",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE81MnNPUjE3eWpfZWgzVFhlWlR2a2Nta3RyWjQ2UGRtZzlNVHJMNFlnWUZELWFmWmNCb0REVG1SYURmT25iTF8xSUtRdjI2MVJhcUZzelZDSnI4aHlPclhvdmhLWFF3cXhFRjBweTBjRG9tWWRPbjA2bg?oc=5",
         "source": "Voyagerdz",
         "publisherUrl": "https://voyagerdz.com/",
         "date": "2026-11-22T08:58:51.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Tourisme en Algérie : des opportunités d’investissement présentées à la diaspora - Diasporas",
@@ -33,6 +25,14 @@
         "source": "Visas & Voyages Algérie",
         "publisherUrl": "https://www.visa-algerie.com/",
         "date": "2026-10-05T07:00:00.000Z",
+        "isNew": false
+      },
+      {
+        "title": "Classement mondial du tourisme : quelle place pour l’Algérie ? - Voyagerdz",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1UR01Ra0xNN3FEVlpiT3FqeDBTcVU2VlU1akFpQlRqN1VIN19MVHl0VHdEVkc0eWI2bmZxdUhrbVB0S0tZOUdHYnRlYndlcGxMaXR4anJxVllTVG5HZWMtc3lXVFZtMHBMc0ZFVWNDc3Z0a3pOUzBVXzZtbU5Gdw?oc=5",
+        "source": "Voyagerdz",
+        "publisherUrl": "https://voyagerdz.com/",
+        "date": "2026-10-02T07:00:00.000Z",
         "isNew": true
       },
       {
@@ -53,7 +53,7 @@
         "url": "https://sfba.social/@Sherifazuhur/117673232528018061",
         "source": "Sherifa Zuhur",
         "date": "2026-11-24T20:10:33.000Z",
-        "isNew": true
+        "isNew": false
       }
     ]
   },
@@ -87,7 +87,7 @@
           "source": "Visas & Voyages Algérie",
           "publisherUrl": "https://www.visa-algerie.com/",
           "date": "2026-11-11T08:00:00.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Air Algérie : la « Super Promo » fait baisser les prix des billets vers l’Algérie - Voyagerdz",
@@ -103,14 +103,14 @@
           "source": "Voyagerdz",
           "publisherUrl": "https://voyagerdz.com/",
           "date": "2026-10-08T07:00:00.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
-          "title": "Air Algérie casse les prix : Le Caire et Doha dès 53 000 DA - Algerie360",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93Nk5EY2s4Nmgxb3RGRHJpTk5pcGQzaVZOWFdqNjFfU0U1WXBiTUlPSFFRQWxJZXAyY1d1SDZvWGJEYTBtbjY0UGFPWGdreG5EejV1QnBFZnhHMm10VmhhdU5WQzBnUEl2b2xWajNnOG5OU2lm?oc=5",
-          "source": "Algerie360",
-          "publisherUrl": "https://www.algerie360.com/",
-          "date": "2026-10-07T07:00:00.000Z",
+          "title": "France : trois lignes Air Algérie en promotion - Visas & Voyages Algérie",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LbnBhV2tqcGl6Wjc2RGpEaUM0X0FnN2c1SHhqQk4tRkxIWllhN3dXWVNUd3pOSS01QUYxUlVQNUJSYm56LVhLS2VHV0xpVEFQVnBKNlVjX1Nhdlo3VTViS0h5YnVCRWdhQTNnLWRFcEhOYmRzYWpIc3U1R29ma3M?oc=5",
+          "source": "Visas & Voyages Algérie",
+          "publisherUrl": "https://www.visa-algerie.com/",
+          "date": "2026-10-06T07:00:00.000Z",
           "isNew": true
         }
       ]
@@ -124,7 +124,7 @@
           "source": "Voyagerdz",
           "publisherUrl": "https://voyagerdz.com/",
           "date": "2026-10-24T07:00:00.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Aéroport d’Alger : il voyageait avec un passeport diplomatique volé et un faux visa - Visas & Voyages Algérie",
