@@ -1,8 +1,16 @@
 {
-  "checkedAt": "2026-11-25T04:21:31.767Z",
+  "checkedAt": "2026-11-25T14:38:43.990Z",
   "media": {
     "status": "ok",
     "items": [
+      {
+        "title": "Tourisme de croisière en Algérie : 5 sites incontournables à Alger et Tipaza - TSA - Tout Sur l'Algérie",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPY1NESVVVVi0yQWhGbUE3M01BUkQyX1NtLXlrZ0VzQ0VUYWFwam52b2dobmJBMThuUXVwdEY1SlRRU0VfbXV1NHE2SFlFTEIwRXVucHg1SkFaVVhiVzN1cEU4UC1fODlGc3ZHNXFUODhnZkFEamttRGk0alpVbUFoeGhkbEV5cjJaQllBeUpzZThCVW1saGRLNHRpTEFISzJrNnlzNHh3?oc=5",
+        "source": "TSA - Tout Sur l'Algérie",
+        "publisherUrl": "https://www.tsa-algerie.com/",
+        "date": "2026-11-25T08:05:03.000Z",
+        "isNew": true
+      },
       {
         "title": "Investissement touristique en Algérie : la diaspora sollicitée - Voyagerdz",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE81MnNPUjE3eWpfZWgzVFhlWlR2a2Nta3RyWjQ2UGRtZzlNVHJMNFlnWUZELWFmWmNCb0REVG1SYURmT25iTF8xSUtRdjI2MVJhcUZzelZDSnI4aHlPclhvdmhLWFF3cXhFRjBweTBjRG9tWWRPbjA2bg?oc=5",
@@ -26,14 +34,6 @@
         "publisherUrl": "https://www.visa-algerie.com/",
         "date": "2026-10-05T07:00:00.000Z",
         "isNew": false
-      },
-      {
-        "title": "Classement mondial du tourisme : quelle place pour l’Algérie ? - Voyagerdz",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1UR01Ra0xNN3FEVlpiT3FqeDBTcVU2VlU1akFpQlRqN1VIN19MVHl0VHdEVkc0eWI2bmZxdUhrbVB0S0tZOUdHYnRlYndlcGxMaXR4anJxVllTVG5HZWMtc3lXVFZtMHBMc0ZFVWNDc3Z0a3pOUzBVXzZtbU5Gdw?oc=5",
-        "source": "Voyagerdz",
-        "publisherUrl": "https://voyagerdz.com/",
-        "date": "2026-10-02T07:00:00.000Z",
-        "isNew": true
       },
       {
         "title": "Développement du tourisme : l'Algérie progresse de quatre places, selon l'indice 2026 du WEF - Algerie Eco",
@@ -63,7 +63,7 @@
       "items": []
     },
     "commerciale": {
-      "status": "ok",
+      "status": "error",
       "items": [
         {
           "title": "Black Friday : Vueling propose 30 % de réduction sur les vols vers l’Algérie - Voyagerdz",
