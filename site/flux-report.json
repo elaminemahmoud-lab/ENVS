@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-25T14:38:43.990Z",
+  "checkedAt": "2026-11-25T23:41:18.045Z",
   "media": {
     "status": "ok",
     "items": [
@@ -9,7 +9,7 @@
         "source": "TSA - Tout Sur l'Algérie",
         "publisherUrl": "https://www.tsa-algerie.com/",
         "date": "2026-11-25T08:05:03.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Investissement touristique en Algérie : la diaspora sollicitée - Voyagerdz",
@@ -17,14 +17,6 @@
         "source": "Voyagerdz",
         "publisherUrl": "https://voyagerdz.com/",
         "date": "2026-11-22T08:58:51.000Z",
-        "isNew": false
-      },
-      {
-        "title": "Tourisme en Algérie : des opportunités d’investissement présentées à la diaspora - Diasporas",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd3JCR1ktOC14cXdNdlQwTTNNejBGNFU3RkdDTmlGOHpLZTV5aUhoNWRSVi1ZMTVkaHVVSG5HRjZwUmh6djFCWUxaS1FwZUNTSVpRenZNNDExYkxja2VabGlQai1RcHpCRk9WaGxjWG1UOUY5RUN2TVV5Umh3MzJQYVd4MU1LdWJlYll1QXFGTENWUW1SZ3lraVJQN2hQWmFPTW9nOUlJdlRhMGxvenQ3SjBB?oc=5",
-        "source": "Diasporas",
-        "publisherUrl": "https://diasporas.tsa-algerie.com/",
-        "date": "2026-11-21T10:48:47.000Z",
         "isNew": false
       },
       {
@@ -63,7 +55,7 @@
       "items": []
     },
     "commerciale": {
-      "status": "error",
+      "status": "ok",
       "items": [
         {
           "title": "Black Friday : Vueling propose 30 % de réduction sur les vols vers l’Algérie - Voyagerdz",
@@ -90,28 +82,28 @@
           "isNew": false
         },
         {
+          "title": "Retour en France : ASL Airlines ajoute deux vols depuis Alger, les billets dépassent 400 € - Visas & Voyages Algérie",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNa3lVeU1sWWY0VUZpemlmTjJyWGpraUJyVWhOZDRmcHpIRHh5bDVGYXBsZWpwbi1qekpUcWt6WU9ZTzVlenAydzlxU2tWcTRUdzVJWWg4ODJpOFJqdDk0cVhDZjhrRkhNdVJONXhKdVBEOS1tVE9DUElDam4wMWNxVldMNHJoNVpxc0FvVUx5N0F6MDJBa1FWNlV1OUp6NWQ2U2tuVUZGWnBZcmNIRDVSNWdMVjM5eWdk?oc=5",
+          "source": "Visas & Voyages Algérie",
+          "publisherUrl": "https://www.visa-algerie.com/",
+          "date": "2026-10-28T07:00:00.000Z",
+          "isNew": true
+        },
+        {
+          "title": "Yassir se lance dans la réservation de vols et d’hôtels en Algérie et ailleurs - Visas & Voyages Algérie",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWHFEaTg4TDFBc1p2NTlhTlJRWDlWdWZucGpSel80blFITVBWdFZJLUFKeE51YzlLVG8yZjEybEFrVm5lVVFoUjJxV2JYOXZGWHlGVTVJeVE4dE8zRnREY29nc1RMSldlOU1uRm1ISEpYNEJERUJ1ZTJmSDdBZGZGRkxJTE5GdGNuZ1ZPTFJwcEhlODdSSDlBU0l3aEwzNmVYRWVJejgtNEVXaWM?oc=5",
+          "source": "Visas & Voyages Algérie",
+          "publisherUrl": "https://www.visa-algerie.com/",
+          "date": "2026-10-25T07:00:00.000Z",
+          "isNew": true
+        },
+        {
           "title": "Air Algérie : la « Super Promo » fait baisser les prix des billets vers l’Algérie - Voyagerdz",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWnVjVUhsdUlHZkViZWZEanhWQnAxcmk1QklQdXI2T2s2U0F0SjdKZWZ2M3RVajBPZGZxNHJUQWdxdEVjTGd5WUExMHgyVklXUTkyQ1M2a0dONWxkdVF1TzViY0VLRUI1blI4STRacUlsNlBRc2RjUWtoTngzWjg2ZHRiR0RWOHNvS1NhQThfM2cwWm5zSEdDM2hyTFhfUQ?oc=5",
           "source": "Voyagerdz",
           "publisherUrl": "https://voyagerdz.com/",
           "date": "2026-10-19T07:00:00.000Z",
           "isNew": false
-        },
-        {
-          "title": "Air Algérie lance une vaste promotion : des billets dès 148 euros - Voyagerdz",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5mWHdaVmtUNk5HRUdYNGNVMlJCY2hHckwteTl6RmlISE04TU50N0xhRWY0LTRYZjRIVHYwbUsxcHpGWEVwdVlweGxCYzlmdF9qR2hpdDdGdU9lZlJTdE1yWjFyVkJFNThYREJRdFNTVVBTSXVXVTItTWZ1bGk?oc=5",
-          "source": "Voyagerdz",
-          "publisherUrl": "https://voyagerdz.com/",
-          "date": "2026-10-08T07:00:00.000Z",
-          "isNew": false
-        },
-        {
-          "title": "France : trois lignes Air Algérie en promotion - Visas & Voyages Algérie",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1LbnBhV2tqcGl6Wjc2RGpEaUM0X0FnN2c1SHhqQk4tRkxIWllhN3dXWVNUd3pOSS01QUYxUlVQNUJSYm56LVhLS2VHV0xpVEFQVnBKNlVjX1Nhdlo3VTViS0h5YnVCRWdhQTNnLWRFcEhOYmRzYWpIc3U1R29ma3M?oc=5",
-          "source": "Visas & Voyages Algérie",
-          "publisherUrl": "https://www.visa-algerie.com/",
-          "date": "2026-10-06T07:00:00.000Z",
-          "isNew": true
         }
       ]
     },
