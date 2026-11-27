@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-27T02:16:40.970Z",
+  "checkedAt": "2026-11-27T10:58:40.746Z",
   "sources": [
     {
       "name": "Ziguade Travel",
@@ -83,7 +83,7 @@
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
       "kind": "Innovation",
       "group": "technologie",
-      "status": "changed"
+      "status": "unchanged"
     },
     {
       "name": "France Diplomatie · Entrée en Algérie",
@@ -102,6 +102,31 @@
   ],
   "changes": [
     {
+      "name": "Nomade Aventure · Algérie",
+      "url": "https://www.nomade-aventure.com/voyage-algerie",
+      "at": "2026-11-27T10:58:40.746Z"
+    },
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-27T10:58:40.746Z"
+    },
+    {
+      "name": "Algérie Tours · Aurès et oasis",
+      "url": "https://www.algerie-tours.com/circuit-aures-et-oasis-dalgerie/",
+      "at": "2026-11-27T10:58:40.746Z"
+    },
+    {
+      "name": "Algérie Tours · Oran et Alger",
+      "url": "https://www.algerie-tours.com/circuit-culturel-oran-et-alger/",
+      "at": "2026-11-27T10:58:40.746Z"
+    },
+    {
+      "name": "Algérie Tours",
+      "url": "https://www.algerie-tours.com/nos-circuits/",
+      "at": "2026-11-27T10:58:40.746Z"
+    },
+    {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
       "at": "2026-11-27T02:16:40.970Z"
@@ -224,31 +249,6 @@
     {
       "name": "Terres d’Aventure · Algérie",
       "url": "https://www.terdav.com/ps-algerie/tp-circuit-accompagne",
-      "at": "2026-11-25T04:21:07.376Z"
-    },
-    {
-      "name": "Nomade Aventure · Algérie",
-      "url": "https://www.nomade-aventure.com/voyage-algerie",
-      "at": "2026-11-25T04:21:07.376Z"
-    },
-    {
-      "name": "TourRadar · Algérie",
-      "url": "https://www.tourradar.com/d/algeria",
-      "at": "2026-11-25T04:21:07.376Z"
-    },
-    {
-      "name": "Algérie Tours · Aurès et oasis",
-      "url": "https://www.algerie-tours.com/circuit-aures-et-oasis-dalgerie/",
-      "at": "2026-11-25T04:21:07.376Z"
-    },
-    {
-      "name": "Algérie Tours · Oran et Alger",
-      "url": "https://www.algerie-tours.com/circuit-culturel-oran-et-alger/",
-      "at": "2026-11-25T04:21:07.376Z"
-    },
-    {
-      "name": "Algérie Tours",
-      "url": "https://www.algerie-tours.com/nos-circuits/",
       "at": "2026-11-25T04:21:07.376Z"
     }
   ]
