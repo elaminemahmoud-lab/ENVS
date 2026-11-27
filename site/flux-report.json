@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-26T19:08:02.330Z",
+  "checkedAt": "2026-11-27T02:16:59.924Z",
   "media": {
     "status": "ok",
     "items": [
@@ -17,7 +17,7 @@
         "source": "Diasporas",
         "publisherUrl": "https://diasporas.tsa-algerie.com/",
         "date": "2026-11-21T10:48:47.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "La formation des professionnels du tourisme figure parmi les priorités de la Stratégie nationale de développement du secteur | Algérie Presse Service - وكالة الأنباء الجزائرية",
@@ -25,7 +25,7 @@
         "source": "وكالة الأنباء الجزائرية",
         "publisherUrl": "https://www.aps.dz/",
         "date": "2026-10-27T07:00:00.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Tourisme thermal en Algérie : les stations et les bains traditionnels ont attiré plus de 3,1 millions de curistes et de visiteurs en 2025 - Algerie Eco",
@@ -33,7 +33,7 @@
         "source": "Algerie Eco",
         "publisherUrl": "https://algerie-eco.com/",
         "date": "2026-10-26T07:00:00.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Tourisme et diaspora : pourquoi l’Algérie engrange moins de devises que la Tunisie - TSA - Tout Sur l'Algérie",
@@ -41,7 +41,7 @@
         "source": "TSA - Tout Sur l'Algérie",
         "publisherUrl": "https://www.tsa-algerie.com/",
         "date": "2026-10-06T07:00:00.000Z",
-        "isNew": true
+        "isNew": false
       },
       {
         "title": "Développement du tourisme : l'Algérie progresse de quatre places, selon l'indice 2026 du WEF - Algerie Eco",
@@ -59,7 +59,7 @@
   },
   "topics": {
     "technologie": {
-      "status": "error",
+      "status": "ok",
       "items": []
     },
     "commerciale": {
@@ -71,7 +71,7 @@
           "source": "Algerie360",
           "publisherUrl": "https://www.algerie360.com/",
           "date": "2026-11-26T15:24:23.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Air Algérie lance deux promotions : jusqu’à -50% sur les prix des billets - Visas & Voyages Algérie",
@@ -79,7 +79,7 @@
           "source": "Visas & Voyages Algérie",
           "publisherUrl": "https://www.visa-algerie.com/",
           "date": "2026-11-26T14:48:47.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Promotion spéciale hiver d’Air Algérie : jusqu’à 50 % de réduction - Voyagerdz",
@@ -87,7 +87,7 @@
           "source": "Voyagerdz",
           "publisherUrl": "https://voyagerdz.com/",
           "date": "2026-11-26T12:46:52.000Z",
-          "isNew": true
+          "isNew": false
         },
         {
           "title": "Black Friday : Vueling propose 30 % de réduction sur les vols vers l’Algérie - Voyagerdz",
@@ -106,12 +106,12 @@
           "isNew": false
         },
         {
-          "title": "Béjaia : l’hôtel Saldae lance une promotion automnale avec 20 % de réduction - Voyagerdz",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAzaEhtdFlaLXRrclJjVmtldGJoeFhZaGU2dzdSQWFDcW5YYkZ2SjBGR3RtMmFfUVNBTGJ2NHhxOUE4Z0xsOUUzQnhkb01hN1gzY3FuSFM2Z0g5YnRqT0JUVWdtSjJKYXNHeDl6dlhaVzgzbDctQ0hkLTZR?oc=5",
-          "source": "Voyagerdz",
-          "publisherUrl": "https://voyagerdz.com/",
-          "date": "2026-11-16T08:00:00.000Z",
-          "isNew": false
+          "title": "Air Algérie relance une ligne internationale, avec une promotion - Visas & Voyages Algérie",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbmtWRnQyeVpHbE1vdVRURTVSUXFQamw0aktSNEd3dXRURlMzX0pXNU5WajNXNzJkQlhoWHRIM3phaUNoWlNuY1JDYU02R043Sk1tX2tTcU5OQTdSakxEYmhRWDlHZExsZkl2RHdyazBNcEhuMTVEVzFuX3FvREhibjA4NGh3Q193NDYwTTl1enktSnd5TVRRQg?oc=5",
+          "source": "Visas & Voyages Algérie",
+          "publisherUrl": "https://www.visa-algerie.com/",
+          "date": "2026-11-11T08:00:00.000Z",
+          "isNew": true
         }
       ]
     },
