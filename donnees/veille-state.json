@@ -2,63 +2,88 @@
   "pages": {
     "https://ziguadetravel.com/": {
       "hash": "4f76c285cd7bebfb6b2e7b1356d58471c2ff91d7ba2bafa39ef5f46f9ea603e7",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.algerie-tours.com/nos-circuits/": {
-      "hash": "d37cd465f78b5f494cc417b1bfec94b21ea47d0ef7fd504f42e31a47de825e14",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "hash": "aba64393de8e74921e9da3a360c4173805375886cd357342b7e78279f2a7963f",
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://essendilene-voyages.com/Essendilene/accueilfr.html": {
       "hash": "c823cd2f517b54be54a7681351377633a5f302adcfb42d36af970b479b9c335a",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://fellaoucentour.dz/": {
       "hash": "f73699883836b870536f3c7a7adc44cfbc687950dfa50d9a17cb4fd59f7f413a",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://kabylie-voyage.com/contact/": {
       "hash": "14c4232453c68f91a2967896786cf0bf7604c4cb46d451beb2193581c3544ed8",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.tourradar.com/d/algeria": {
-      "hash": "d8605a5ca87306aec2c0937e994e99398e1a6b07e5aab120947fc7f27e9dcc01",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "hash": "3809e93d986f6993becfc7d02dc58e4699dffa16d426d9826c49acf54541d7b6",
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.nomade-aventure.com/voyage-algerie": {
       "hash": "693c918037715c89a0fcfa133ee6530cda38a0958a9c976e09a20c392fec3067",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.terdav.com/ps-algerie/tp-circuit-accompagne": {
-      "hash": "9dea94471936d2196f6fa86c9eb391faad4a9d8e465346bdc68d8883cc866ccd",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "hash": "49a160bdae0f50622b305ea59faacf7ec09ab7ec2379f1384ebe14417e115d30",
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes": {
       "hash": "a6f8e8a4c86626c31bee77a9c16b167c534dc48a43494294d64843dbe271767f",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-entree-sejour": {
       "hash": "023a114ec54d4e3d8f727469b35feed6197dfa192d40349c709b57fa66079cdc",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.diplomatie.gouv.fr/fr/information-par-pays/algerie/conseils-aux-voyageurs-securite": {
       "hash": "d5986c216ff0c04f1b714812a734f5cf4dce5e1aef078b376e28b99f1206587d",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.algerie-tours.com/circuit-culturel-oran-et-alger/": {
-      "hash": "d4da54d6bf90bb4f8aa6dfc8067543a0cabe0a1f268933b6ce19dee3a9b6c76f",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "hash": "a7fb7566463327044cbff90a9e8112de3e53e08e0872d4be2bb83a97b45dd2bc",
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://www.algerie-tours.com/circuit-aures-et-oasis-dalgerie/": {
-      "hash": "117acf489485380bd02eb961ad1cd46f5c616bb91b4660d25f66e92769069f61",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "hash": "8eaced180f317b456bae6d3455c71f839c4666ed7cad2b757e0292b713e1f1c0",
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     },
     "https://mzabtours.net/": {
       "hash": "91914edf6b29205419cbe22f829580afad2e89270d137766624129de0475af6c",
-      "checkedAt": "2026-11-27T20:01:41.352Z"
+      "checkedAt": "2026-11-28T02:45:48.753Z"
     }
   },
   "changes": [
     {
+      "name": "Terres d’Aventure · Algérie",
+      "url": "https://www.terdav.com/ps-algerie/tp-circuit-accompagne",
+      "at": "2026-11-28T02:45:48.753Z"
+    },
+    {
+      "name": "TourRadar · Algérie",
+      "url": "https://www.tourradar.com/d/algeria",
+      "at": "2026-11-28T02:45:48.753Z"
+    },
+    {
+      "name": "Algérie Tours · Aurès et oasis",
+      "url": "https://www.algerie-tours.com/circuit-aures-et-oasis-dalgerie/",
+      "at": "2026-11-28T02:45:48.753Z"
+    },
+    {
+      "name": "Algérie Tours · Oran et Alger",
+      "url": "https://www.algerie-tours.com/circuit-culturel-oran-et-alger/",
+      "at": "2026-11-28T02:45:48.753Z"
+    },
+    {
+      "name": "Algérie Tours",
+      "url": "https://www.algerie-tours.com/nos-circuits/",
+      "at": "2026-11-28T02:45:48.753Z"
+    },
+    {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
       "at": "2026-11-27T20:01:41.352Z"
@@ -181,31 +206,6 @@
     {
       "name": "APS · Innovation touristique",
       "url": "https://www.aps.dz/fr/algerie/education-et-technologie/mvawk748-concours-national-de-la-meilleure-innovation-touristique-intelligente-11-projets-primes",
-      "at": "2026-11-25T14:38:20.983Z"
-    },
-    {
-      "name": "Terres d’Aventure · Algérie",
-      "url": "https://www.terdav.com/ps-algerie/tp-circuit-accompagne",
-      "at": "2026-11-25T14:38:20.983Z"
-    },
-    {
-      "name": "Nomade Aventure · Algérie",
-      "url": "https://www.nomade-aventure.com/voyage-algerie",
-      "at": "2026-11-25T14:38:20.983Z"
-    },
-    {
-      "name": "TourRadar · Algérie",
-      "url": "https://www.tourradar.com/d/algeria",
-      "at": "2026-11-25T14:38:20.983Z"
-    },
-    {
-      "name": "Algérie Tours · Aurès et oasis",
-      "url": "https://www.algerie-tours.com/circuit-aures-et-oasis-dalgerie/",
-      "at": "2026-11-25T14:38:20.983Z"
-    },
-    {
-      "name": "Algérie Tours · Oran et Alger",
-      "url": "https://www.algerie-tours.com/circuit-culturel-oran-et-alger/",
       "at": "2026-11-25T14:38:20.983Z"
     }
   ]
